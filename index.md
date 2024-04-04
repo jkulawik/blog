@@ -3,6 +3,7 @@ layout: default
 title: Hello
 ---
 
+![](/assets/images/sniper_monkey.jpg){:.centered}
 
 ## An easy to use, minimal, text focused Jekyll theme
 
