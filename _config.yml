@@ -59,9 +59,10 @@ Blog: /blog
 
 # Add general links to site pages here
 links:
-  Resume: /assets/resume.pdf
+  About: /about
   
 
 # Add links for more focus here
 special_links:
-  "Search": https://duckduckgo.com
+  "Don't ask to ask": https://dontasktoask.com/
+  "No Hello": https://nohello.net/en/
