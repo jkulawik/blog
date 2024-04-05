@@ -1,3 +1,5 @@
+jekyllBear is licensed under MIT:
+
 The MIT License (MIT)
 
 Copyright (c) 2022 
