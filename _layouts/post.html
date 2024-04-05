@@ -11,6 +11,13 @@ layout: compress
     
     <h1>{{ page.title }}</h1>
     <i>{{ page.date | date: "%b %d, %Y" }}</i>
+
+    <br/>
+    <small>
+        {% for tag in page.tags %}
+        <a href="{{ 'tagged/' | relative_url }}{{ tag }}" title="See all posts by {{ tag }} tag">#{{ tag }}</a>
+        {% endfor %}
+    </small>
     <h4 class="subtitle">{{ page.subtitle }}</h4>
 
     {{ page.content }}
