@@ -5,7 +5,7 @@ title: Hello
 
 ![](/assets/images/sniper_monkey.jpg){:.centered}
 
-## An easy to use, minimal, text focused Jekyll theme
+## {{site.description}}
 
 [Bear Blog](https://bearblog.dev/) is *"a blogging platform where words matter most"*. 
 
