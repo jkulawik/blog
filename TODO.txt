@@ -1,0 +1,5 @@
+* add tag list to post layout
+* automate tags; so that adding new tags won't require config?
+* update footers
+* add support for parsing markdown to create header link pages (_pages dir?)
+* update blog/tagged layouts to use group_by/group_by_exp instead of manual for loops
