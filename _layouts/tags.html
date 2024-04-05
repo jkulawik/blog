@@ -1,0 +1,33 @@
+---
+layout: compress
+---
+
+{% include head.html %}
+
+<main>
+
+    {% include header.html %}
+
+    {{ content }}
+
+    <ul class="blog-posts">
+        {% for entry in site.tags %}
+        {% assign tag = entry | first  %}
+        <h3>#{{ tag }}</h3>
+        <ul>
+        {% for post in site.tags[tag] %}
+        <li>
+            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+        </li>
+        {% endfor %}
+        </ul>
+        {% endfor %}
+    </ul>
+
+</main>
+
+{% include footer.html %}
+
+</body>
+
+</html>
