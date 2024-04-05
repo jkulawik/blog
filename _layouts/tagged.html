@@ -17,19 +17,11 @@ layout: compress
     </p>
 
     <ul class="blog-posts">
-        {% assign post_list = '' | split: ',' %}
-        {% for post in site.tags[page.slug] %}
-        {% assign post_list = post_list | push: post %}
-        {% endfor %}
-        
-        {% for post in post_list %}
-        {% assign currentdate = post.date | date: "%Y" %}
-        {% if currentdate != date %}
-        {% unless forloop.first %}</ul>{% endunless %}
-        <h2 id="y{{post.date | date: "%Y"}}">{{ currentdate }}</h2>
+        {% assign postsByYear = site.tags[page.slug] | group_by_exp:"post", "post.date | date: '%Y' " %}
+        {% for year in postsByYear %}
+        <h2>{{ year.name }}</h2>
         <ul>
-        {% assign date = currentdate %}
-        {% endif %}
+        {% for post in year.items %}
         <li>
             <span>
                 <i>
@@ -40,8 +32,8 @@ layout: compress
             </span>
             <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
         </li>
-        {% if forloop.last %}</ul>{% endif %}
-        
+        {% endfor %}
+        </ul>
         {% endfor %}
 
     </ul>

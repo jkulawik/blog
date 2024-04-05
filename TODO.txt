@@ -1,7 +1,7 @@
 * automate tags; so that adding new tags won't require config?
 * update footers
-* update blog/tagged layouts to use group_by/group_by_exp instead of manual for loops
 * add RSS
+* remove redirect plugin?
 
 https://stackoverflow.com/questions/19086284/jekyll-liquid-templating-how-to-group-blog-posts-by-year
 https://rfong.github.io/rflog/2020/02/28/jekyll-tags/
@@ -9,3 +9,4 @@ https://rfong.github.io/rflog/2020/02/28/jekyll-tags/
 Done
 * add tag list to post layout
 * Check out support for parsing markdown to create header link pages (_pages dir?)
+* update blog/tagged layouts to use group_by/group_by_exp instead of manual for loops
