@@ -1,12 +1,10 @@
 ###########
-# site.title
 
 title: Sniper Monkey
-description: Yet another blog about tech and video games (YABATAVG)
+description: Yet another blog about tech and games (YABATAG)
 # baseurl: "/jekyllBear" # the subpath of your site, e.g. /blog/
 url: "https://knhash.in/jekyllBear" # the base hostname & protocol for your site
 # host: 0.0.0.0
-
 
 #########################
 # more settings
@@ -14,9 +12,6 @@ url: "https://knhash.in/jekyllBear" # the base hostname & protocol for your site
 plugins:
   - jekyll-redirect-from
   - jekyll-seo-tag
-
-whitelist:
-  - jekyll-redirect-from
 
 markdown: kramdown
 
@@ -47,7 +42,7 @@ defaults:
 
 # baseurl: ""
 permalink: /blog/:slug
-timezone: America/New_York
+timezone: Poland
 future: false
 
 exclude:
@@ -61,7 +56,8 @@ Blog: /blog
 # Add general links to site pages here
 links:
   About: /about
-  
+  Lasaga: /lasaga
+
 
 # Add links for more focus here
 special_links:
