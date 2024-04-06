@@ -47,17 +47,15 @@ future: false
 exclude:
 - README.md
 - LICENSE.md
+- TODO.txt
 
 exclude: [vendor]
-
-Blog: /blog
 
 # Add general links to site pages here
 links:
   Home: /
   Blog: /blog
   Tags: /tags
-  About: /about
   Lasaga: /lasaga
 
 
