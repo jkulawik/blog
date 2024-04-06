@@ -1,11 +1,8 @@
-* update footers
 * add RSS
 * remove redirect plugin?
 
-https://stackoverflow.com/questions/19086284/jekyll-liquid-templating-how-to-group-blog-posts-by-year
-https://rfong.github.io/rflog/2020/02/28/jekyll-tags/
-
 Done
+* update footers
 * automate tags; so that adding new tags won't require config?
 * add tag list to post layout
 * Check out support for parsing markdown to create header link pages (_pages dir?)
