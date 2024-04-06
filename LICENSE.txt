@@ -1,4 +1,10 @@
-jekyllBear is licensed under MIT:
+jekyllBear is licensed under the MIT license (see below).
+
+The writings (particularly, all files ending with the .md extension)
+in this repository are a copyright of the author, i.e. the repository owner (@jkulawik), unless noted otherwise.
+
+Other additions and edits to the content of the upstream version of jekyllBear are also licensed under MIT.
+
 
 The MIT License (MIT)
 
