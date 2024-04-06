@@ -1,5 +1,7 @@
 * add RSS
 * remove redirect plugin?
+* improve dark theme
+* improve/fix code highlihting
 
 Done
 * update footers
