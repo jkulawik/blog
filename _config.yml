@@ -27,19 +27,19 @@ compress_html:
 #   sass_dir: css
 #   style:    compressed
 
-collections:
-  my_tags:
-    output: true
-    permalink: /tagged/:slug/
-defaults:
-  -
-    scope:
-      path: ""
-      type: my_tags
-    values:
-      layout: tagged
+# Set-up for generating tag pages from _my_tags
+# collections:
+#   my_tags:
+#     output: true
+#     permalink: /tagged/:slug/
+# defaults:
+#   -
+#     scope:
+#       path: ""
+#       type: my_tags
+#     values:
+#       layout: tagged
 
-# baseurl: ""
 permalink: /blog/:slug
 timezone: Poland
 future: false

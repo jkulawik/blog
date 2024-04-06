@@ -13,7 +13,7 @@ layout: compress
     <ul class="blog-posts">
         {% for entry in site.tags %}
         {% assign tag = entry | first  %}
-        <h3>#{{ tag }}</h3>
+        <h5>#{{ tag }}</h5>
         <ul>
         {% for post in site.tags[tag] %}
         <li>
