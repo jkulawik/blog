@@ -25,12 +25,17 @@ Some notable ones that I realized I took for granted:
   * The reply feature (i.e. indicate which message you're replying to)
   * Rich presence; I mostly post YouTube and Twitter links, YouTube often embeds well, but other stuff not so often.
 * How good the mobile versions of the apps are, if there is one at all
-* Many of the open apps share a different approach to channel organisation where you
+* Privacy and accessibility are usually a trade-off.
+Apps with self-hosting tend to be business oriented
+and apps which offer free registration vary with their privacy,
+which often cannot be easily discerned.
+
+* ~~Many of the open apps share a different approach to channel organisation where you
 have to subscribe to specific channels rather than seeing them all by default.
-While in itself this can be a benefit (pick what you want instead of muting everyhing you don't),\
+While in itself this can be a benefit (pick what you want instead of muting everyhing you don't),
 it can diminish the sense of community by putting users into bubbles.
 Additionally, it is sometimes implemented in a way that mixes channels of different servers in one list,
-making for a messy experience.
+making for a messy experience.~~
 
 ---
 ## Texting apps
@@ -47,7 +52,7 @@ They tend to be mobile-first apps too, which usually makes for a clunky desktop 
 
 Feature-wise they tend to be very similar:
 * Voice chat: sometimes
-* Screen sharing: usually implemented along with voice
+* Screen sharing: somewhat rare
 * Multichannel support: never
 * Custom emoji: no
 * Self-hosting: no
@@ -73,12 +78,29 @@ Other than that it seems like a good candidate.
 Most of these are fairly decent overall, but lack in customization.
 Additionally, they tend to be pricey and do not offer no-self-hosting registration,
 placing them as unlikely to be a good Discord alternative.
+They can also be more technically involved to work with.
 
 ### Slack
 
 ### Rocket chat
 
 ### Mattermost
+
+### Element
+
+Pretty much the most mature [Matrix](https://matrix.org/) client.
+Notable for it's decentralized nature, it is one of the better of the business-oriented apps.
+
+* Voice chat: yes
+* Screen sharing: yes
+* Multichannel support: yes, but a bit convoluted; previously you could only create "rooms",
+which would show up along with DMs in a messy way (think of it as Discord channels only showing up on your DM list and no servers). [The ecently implemented Spaces feature](https://element.io/blog/spaces-the-next-frontier/) should alleviate this issue
+and it makes for a more server-like experience.
+* Custom emoji: No, and [this 8 year old Github issue](https://github.com/element-hq/element-meta/issues/339)
+is not boding well for the possibility of those being implemented.
+* Self-hosting: yes
+* Pricing: free version should be sufficient
+* Other: federated and decentralised; you have good control over your data
 
 ### Zulip
 
@@ -99,6 +121,8 @@ It's not the worst approach for a business, but pretty bad for a community.
 * Self-hosting: yes
 * Pricing: free version with pretty much all the features you need
 * Other: open source
+
+### Google chat
 
 ### Microsoft Teams
 
@@ -154,8 +178,6 @@ It's remarkably similar to Discord in the way it works, but much simpler.
 * Self-hosting: no
 * Pricing: free
 * Other: messages cannot be edited
-
-### Element
 
 ### Skype
 
