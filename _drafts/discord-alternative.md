@@ -43,15 +43,17 @@ making for a messy experience.~~
 Texting apps which are focused on direct messaging and group chats are a dime a dozen.
 
 These won't replace Discord, but are worth mentioning to establish what I'm going for,
-as many "Discord alternative" articles on the net tend to act like these are even remotely suitable.
+since many "Discord alternatives" articles tend to act like these are even remotely suitable.
 
 While not necessarily bad for what they are, texting apps aren't in Discord's ballpark.
 They tend to be mobile-first apps too, which usually makes for a clunky desktop experience.
-* WhatsApp, Messenger and so on
+Examples:
+* WhatsApp
+* Messenger
 * Signal (A+ for privacy though)
 
 Feature-wise they tend to be very similar:
-* Voice chat: sometimes
+* Voice chat: usually
 * Screen sharing: somewhat rare
 * Multichannel support: never
 * Custom emoji: no
@@ -60,17 +62,18 @@ Feature-wise they tend to be very similar:
 
 ### Telegram
 
-Telegram offers extensive customizability, but it is a mobile app first,
-so in some ways it tends to be simplistic.
+Telegram offers extensive customizability, but it seems to be a mobile app first,
+so in some ways it might be a bit simplistic.
 Other than that it seems like a good candidate.
 
 * Voice chat: yes
 * Screen sharing: yes
-* Multichannel support: yes, called "topics", but these [might interfere with some other features](https://caribbean.dev/telegram-group-topics-the-pros-and-the-cons/)
+* Multichannel support: yes, called "topics", but these [might interfere with a few other features](https://caribbean.dev/telegram-group-topics-the-pros-and-the-cons/).
+Note that this issue might be resolved already.
 * Custom emoji: yes
 * Self-hosting: no
-* Pricing: free, with some premium features
-* Other: somewhat privacy-friendly
+* Pricing: free, with some premium features behind a paywall
+* Other: reportedly privacy-friendly, supports message pinning
 
 ---
 ## Business-oriented apps
@@ -88,8 +91,9 @@ They can also be more technically involved to work with.
 
 ### Element
 
-Pretty much the most mature [Matrix](https://matrix.org/) client.
-Notable for it's decentralized nature, it is one of the better of the business-oriented apps.
+Element uses an open communication protocol called [Matrix](https://matrix.org/),
+designed for decentralized communication and is the most mature client app based on it.
+It is one of the better of the business-oriented apps.
 
 * Voice chat: yes
 * Screen sharing: yes

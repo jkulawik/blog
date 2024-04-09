@@ -91,10 +91,16 @@ Need I say more?
 
 ## Dependencies
 
-The usage of specific header files instead of some kind of a module/packaging system
-makes it pretty annoying to acquire all necessary dependencies.
+The usage of specific header files instead of some kind of a module/package system
+makes working with dependencies highly annoying.
 If you don't know where a header file comes from (which is typically the case),
 good luck finding it.
+Missing function? Unless its name hints at what header it should be in,
+you have next to zero chance of finding it yourself.\
+In a way, this responsibility is partially fulfilled by namespaces;
+however, many developers omit them in one way or another.
+Namespaces aren't great at pointing to the source of things anyway,
+since nothing stops developers from e.g. calling a JSON library's namespace "FishSoup".
 
 ## Linking and compiling
 
@@ -102,7 +108,7 @@ Full disclosure: I am too lazy to learn how to properly link C++ code.
 
 However, at a time in which essentially every major programming language handles imports for you,
 should I really need to get a PhD in linking C++ to compile my code?
-Perhaps this complexity offers some amazing power in some department I'm not aware of,
+Perhaps this complexity offers some amazing control in some department I'm not aware of,
 but to me this is an antiquated part of the language that adds tons of annoying overhead for businesses and hobbyists alike.
 
 Many C++ build systems have been created to address this issue,
@@ -110,8 +116,12 @@ but I keep seeing C++ engineers say they're mostly crap and you should stick to 
 Regardless, fighting the linker is the last thing I want to be doing when I have an assignment to finish.
 
 When it comes to compilation proper, the amount of spam that comes out of the compiler is terrible.
-Showing each class and variable namespace and C++ version (akin to `std::__cpp11::string`)
+Showing the namespace and C++ version for each class and variable (akin to `std::__cpp11::string`)
 and the same info messages 20 times makes makes troubleshooting a nightmare.
+
+### General aura of being overcomplicated
+
+e.g. loading files
 
 ## Conclusion
 
