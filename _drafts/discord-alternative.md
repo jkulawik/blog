@@ -6,9 +6,9 @@ tags: [software]
 ---
 
 Come with me on the fruitless journey of trying to find a Discord alternative.
-Preferably free and open source; otherwise the option of self-hosting is welcome.
+Preferably free and open source; the option of self-hosting is welcome.
 I mostly use Discord for interacting with small groups of friends and briefly interacting
-with larger communities, which are the use-cases I will be evaluating the apps here.
+with larger communities, which are the use-cases I had in mind while evaluating the apps here.
 
 The rationale for moving away from Discord is as follows:
 * Discord can do what it wants with our data,
@@ -22,6 +22,8 @@ Just recently it was announced that the app would start integrating ads, althoug
 or in order to raise their limit
 
 In other words, my search stems from future-proofing, data privacy paranoia and annoyance with emoji limitations.
+There's also the minor gripe of sound missing from screen sharing on Linux,
+an issue which has been around for years and nothing is being done about it.
 
 Finding an alternative to the powerhouse that Discord is comes with a set of tough challenges:
 * Convincing other users to start using something else, but that's a whole other can of worms.
@@ -64,7 +66,10 @@ Feature-wise they tend to be very similar:
 
 ### Telegram
 
-Telegram offers extensive customizability, but it seems to be a mobile app first,
+![(A screenshot of the Telegram desktop app)](https://dl.flathub.org/media/org/telegram/desktop/d89cd596919de725258e2feda770e650/screenshots/image-1_752x519@1.png)
+
+[Telegram](https://telegram.org/) offers [extensive customizability](https://telegram.org/blog/android-themes),
+but it seems to be a mobile app first,
 so in some ways it might be a bit simplistic.
 Other than that it seems like a good candidate.
 
@@ -88,7 +93,7 @@ and it seems to have stayed in that category.
 * Multichannel support: no
 * Custom emoji: no
 * Self-hosting: no
-* Pricing: free but it's owned by Microsoft so they're definitely harvesting your data
+* Pricing: free but it's owned by Microsoft so your data is definitely being harvested
 
 
 ---
@@ -107,10 +112,11 @@ There's also surprisingly many of these, so I wasn't able to analyze them in as 
 
 ### Mattermost
 
+![(A screenshot of Mattermost)](https://dl.flathub.org/media/com/mattermost/Desktop/0bf11798092500f8b581cb7431c8a187/screenshots/image-1_orig.png)
+
 An app targeted to developers;
 as far as my interests go, it is one of the more suitable alternatives for Discord.
 Mattermost would be a great alternative if not for its steep monetization of the premium version.
-If you don't need group calls, look no further; but you probably do need those.
 
 * Voice chat: yes
 * Screen sharing: yes
@@ -140,7 +146,7 @@ The lack of self-hosting eliminates the main advantage of using a business-orien
 
 ### Rocket chat
 
-Probably fine for business, but not very enticing for communities.
+Fine for business, but not very enticing for communities.
 
 * Voice chat: kinda? I'm not sure if it's built-in or integrated
 * Screen sharing: depends, video calls are through integration only
@@ -152,14 +158,16 @@ Probably fine for business, but not very enticing for communities.
 
 ### Element
 
-Element uses an open communication protocol called [Matrix](https://matrix.org/),
+![(A screenshot of Element)](https://element.io/images/Ui-grad-homepage.png)
+
+[Element](https://element.io/) uses an open communication protocol called [Matrix](https://matrix.org/),
 designed for decentralized communication and is the most mature client app based on it.
 It is one of the better of the business-oriented apps.
 
 * Voice chat: yes
 * Screen sharing: yes
 * Multichannel support: yes, but a bit convoluted; previously you could only create "rooms",
-which would show up along with DMs in a messy way (think of it as Discord channels only showing up on your DM list and no servers). [The ecently implemented Spaces feature](https://element.io/blog/spaces-the-next-frontier/) should alleviate this issue
+which would show up along with DMs in a messy way (think of it as Discord channels only showing up on your DM list and no servers). [The recently implemented Spaces feature](https://element.io/blog/spaces-the-next-frontier/) should alleviate this issue
 and it makes for a more server-like experience.
 * Custom emoji: No, and [this 8 year old Github issue](https://github.com/element-hq/element-meta/issues/339)
 is not boding well for the possibility of those being implemented.
@@ -167,7 +175,12 @@ is not boding well for the possibility of those being implemented.
 * Pricing: free version should be sufficient
 * Other: federated and decentralised; you have good control over your data
 
+Since Element's features stem from what the Matrix protocol is capable of,
+other Matrix apps will likely have similar features at best.
+
 ### Zulip
+
+![(A screenshot of Zulip)](https://dl.flathub.org/media/org/zulip/Zulip/cf358f6f6aef4d346485f6d10049ff01/screenshots/image-1_orig.png)
 
 Zulip is a pretty good app for businesses,
 but the lack of built-in voice/video calls is a shame.
@@ -209,32 +222,37 @@ but tend to be different enough that they won't be a perfect fit.
 
 ### TeamSpeak
 
+![(A screenshot of Zulip)](https://discourse-forums-images.s3.dualstack.us-east-2.amazonaws.com/original/3X/b/d/bde87328b5d5cfe3a1ef611aeef0d375710a2b23.png)
+
 While great for voice chat and featuring some nice customization,
-TeamSpeak has a... specific approach to text chats.
+[TeamSpeak](https://teamspeak.com/en/) has an unusual approach to text chats.
 
 Servers only have voice channels.
 These have an attached text chat, which is accessible only if you're in the voice call.
-This is mostly for the purpose of sharing links and files during calls,
-but it's intended as private and chat history gets deleted after the call.
+It is intended for sharing links and files during calls,
+and designed with privacy in mind;
+people who aren't in the voice call can't read it, and chat history gets deleted after the call.
 
 Group text chats were recently added, but as with mobile apps, these are single-channeled.
 The app interface can be a bit confusing at times, even in version 5.
 
-TeamSpeak is great if you mostly use Discord for voice calls,
-but it is not a contender until it adds regular text channels to servers.
+TeamSpeak is great if you don't text much,
+but it won't be a contender for Discord until it adds regular text channels to servers.
 Sadly, despite TeamSpeak memeing about being an underdog to Discord on Twitter,
 they seem to move backwards on this issue;
 a singular global text chat for servers [was apparently removed in TeamSpeak 5](https://community.teamspeak.com/t/global-server-chat/2458/12).
 
 * Voice chat: yes (great one, reportedly)
 * Screen sharing: in the works for over a year, but no ETA or significant news about it.
-* Multichannel support: not really (voice only)
+* Multichannel support: not really; tied to voice calls and temporary
 * Custom emoji: yes
 * Self-hosting: yes
-* Pricing: free version which permits owning a single server with 32 users
-* Other: quite limited text chat functionality, has a simple reply feature
+* Pricing: free version permits owning a single server with 32 users
+* Other: quite limited text chat functionality, but has a simple reply feature
 
 ### Steam chat
+
+![(A screenshot of a Steam group chat)](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fs.aolcdn.com%2Fhss%2Fstorage%2Fmidas%2Fedce1225506731ed1963fda18a6294bc%2F206551184%2Fsgteamchat.jpg&f=1&nofb=1&ipt=4609225a19614ef2ebb109e121bb4ca15513f814454b55934653714211d52338&ipo=images)
 
 Bet you didn't expect this one, huh?
 Steam's group chat feature offers a server-like experience now.
@@ -272,7 +290,23 @@ These share Discord's freeware approach of "free until
 
 ### Guilded
 
+![(A screenshot of Guilded)](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic1.srcdn.com%2Fwordpress%2Fwp-content%2Fuploads%2F2020%2F05%2Fguildedlogo.jpg&f=1&nofb=1&ipt=eb8da7a0e2f464fb6c20277c33297e30ae45795b71dee7c5581d9d03a80f0800&ipo=images)
+
+Guilded offers some massively impressive features,
+posing it as a good candidate for being a "Discord killer".
+However, there's a tiny caveat; Guilded is owned by Roblox, a company known for shady practices on their gaming platform.
+
+TODO elaborate on this and link stuff
+
+
+The features I mentioned above include:
+...
+
+
+
 ### Revolt chat
+
+![(A screenshot of Revolt)](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fdl.flathub.org%2Frepo%2Fscreenshots%2Fchat.revolt.RevoltDesktop-stable%2F1504x846%2Fchat.revolt.RevoltDesktop-e70e44718034af84ddbd1f89375bb4cd.png&f=1&nofb=1&ipt=6ae14e269eb92b8ee6b1e67e16f3a52e0175bb7dc49cdb4978b31eb3eb2d00a1&ipo=images)
 
 I've been putting this one off because it gets pretty crazy.
 
