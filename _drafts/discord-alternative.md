@@ -5,8 +5,8 @@ title:  "The futile quest for a Discord alternative"
 tags: [software]
 ---
 
-Come with me on the fruitless journey of trying to find a Discord alternative.
-Preferably free and open source; self-hosting is welcome.
+Come with me on the fruitless journey of trying to find a good Discord replacement.
+Preferably free, open source and self-hostable.
 
 ### The rationale
 
@@ -24,17 +24,28 @@ Just recently it was announced that the app would start integrating ads, althoug
 Getting bought by any large corporation is not good news for the future of any app.
 As to why that is, maybe I will write another blog post about this someday.
 For now look no further than how the code editor Atom was sunset in favor of VS Code after Microsoft acquired Github,
-the creators of the app.
+the creators of Atom.
 
-* Honestly I don't want to pay a decent chunk of money to be able to use custom emojis anywhere I want,
-or in order to raise their limit.
-At the moment the price is alright,
+* Paywalled features. At the moment the price of Nitro is alright,
 but it has fluctuated a lot in the past when Discord shifted around the available plans.
+In a similar vein, Discord decided to lock certain features behind turning servers
+into open communities (e.g. announcement channels).
 
 In short, my search for a Discord alternative stems from future-proofing,
 data privacy paranoia and annoyance with emoji limitations.
 There's also the minor gripe of sound missing from screen sharing on Linux,
 an issue which has been around for years and nothing is being done about it.
+
+[This post on Reddit](https://www.reddit.com/r/pcgaming/comments/di0cqz/new_teamspeak_beta_with_free_voice_chat_text_chat/)
+has a really cool comment that puts it well:
+>  That's the main thing about Discord. **For now**, it's mostly free (as in free beer, NOT free speech); and there hasn't been big breaches, scandals or issues (as far as I know). But it's a fully hosted solution, where we user and community handlers have **zero control and guarantees**.
+>
+> Tomorrow Discord can have advertisement, selling outrageous amount of telemetry, ask everyone to pay, or anything else. If you think that's science-fiction, you're too young to remember when Movable Type was the hot thing on the interweb and almost everyone used it "because it's free".
+>
+> That's what Teamspeak and Mumble have. Control is in our hands. Even more so with Mumble, because it's open source. 
+
+Lastly, I do not plan on moving away from Discord yet;
+but if shit hits the fan, I want to have an overview on what to replace it with.
 
 ### Challenges and criteria
 
@@ -57,8 +68,7 @@ Some notable ones that I realized I took for granted:
 * Pricing.
 My ideal candidate would be free and open-source, like Linux, Blender or GIMP.
 While I won't deny I'm a bit of a cheap bastard,
-I just don't want to deal with pricing changes
-and being left at the mercy of some executive chasing the bottom-line.
+I just don't want to be left at the mercy of some executive chasing the bottom-line.
 
 * Self-hosting and privacy vs accessibility.
 Self-hosting puts you in control of your data (and notably also the data of the people who use your server),
@@ -102,6 +112,10 @@ Feature-wise they tend to be very similar:
 * Self-hosting: no
 * Pricing: free but your data is likely being harvested
 
+It's also worth noting that many of these use the XMPP protocol,
+but as far as I can tell it doesn't have any interoperable clients
+similar to Discord.
+
 ### Telegram
 
 ![(A screenshot of the Telegram desktop app)](https://dl.flathub.org/media/org/telegram/desktop/d89cd596919de725258e2feda770e650/screenshots/image-1_752x519@1.png)
@@ -111,6 +125,9 @@ but it seems to be a mobile app first,
 so in some ways it might be a bit simplistic.
 Other than that it seems like a good candidate.
 
+One great feature of Telegram is its privacy:
+> All data is stored heavily encrypted and the encryption keys in each case are stored in several other data centers in different jurisdictions. This way local engineers or physical intruders cannot get access to user data.
+
 * Voice chat: yes
 * Screen sharing: yes
 * Multichannel support: yes, called "topics", but these [might interfere with a few other features](https://caribbean.dev/telegram-group-topics-the-pros-and-the-cons/).
@@ -118,7 +135,11 @@ Note that this issue might be resolved already.
 * Custom emoji: yes
 * Self-hosting: no
 * Pricing: free, with some premium features behind a paywall
-* Other: reportedly privacy-friendly, supports message pinning
+* Other: supports message pinning
+
+PS. Telegram has some crazy stuff going on behind the scenes.
+It was made by Russians who are now moving the company around the world and the company itself
+"has a complex corporate structure of shell companies to delay complying with government subpoenas".
 
 ### Skype
 
@@ -141,15 +162,16 @@ Business-oriented apps tend to focus on integrating various development tools,
 log-in solutions
 and other things related to corporate administration.
 They're typically designed to manage projects, which can be subtly detrimental to hosting a community.
-These apps are usually very robust, but lack in customization.
 
-Since they're meant for companies, they often come with a big price tag
-and require you to self-host.
-While I do want self-hosting, these apps are meant to be handled by professional admins,
+Since they're meant for companies, they come with a big price tag and require self-hosting.
+These apps are meant to be deployed by professional admins,
 which means most of them will be too hard to install and operate for a regular user.
 
 All of those reasons place the business-oriented apps as unlikely to be good Discord alternatives,
-but I included them for the sake of coverage.
+but I included them to cover all bases.
+As such, I decided not to go too much in depth about them for the sake of brevity.
+One large area I didn't research was what these apps mean by video call integrations;
+my impression is that these mean links to external services, but I might be wrong.
 
 ### Mattermost
 
@@ -166,6 +188,7 @@ Mattermost would be a great alternative if not for its steep monetization of the
 * Self-hosting: yes
 * Pricing: there's a free option which limits voice chat to 1-on-1 calls;
 the next license is $10 per month *per user*, sadly making Mattermost quite hostile to hosting even small communities.
+* Other: has a mobile app
 
 PS. Apparently the 1:1 call limit was introduced very recently.
 Massive bummer because it would have been the best fit for my use-case.
@@ -184,7 +207,6 @@ The lack of self-hosting eliminates the main advantage of using a business-orien
 * Self-hosting: no
 * Pricing: free version which limits voice chat to 1-on-1 calls and restricts you to a single "server" (workspace)
 
-
 ### Rocket chat
 
 Fine for business, but not very enticing for communities.
@@ -198,17 +220,10 @@ Fine for business, but not very enticing for communities.
 
 ### Zulip
 
-![(A screenshot of Zulip)](https://dl.flathub.org/media/org/zulip/Zulip/cf358f6f6aef4d346485f6d10049ff01/screenshots/image-1_orig.png)
-
-Zulip is a pretty good app for businesses,
-but the lack of built-in voice/video calls is a shame.
-
-Instead of servers, there are organizations,
-so owning multiple servers does not sound very plausible.
 Zulip uses a subscription-based channel approach;
-an organization has hashtagged "streams", where you discuss separate topics.
+an organization (server) has hashtagged "streams", where you discuss separate topics.
 Think of it as if you couldn't talk in a Discord channel directly and had to always start threads instead.
-It's not the worst approach for a business, but pretty bad for a community.
+I think this design atomizes discussions too much, but it might be a matter of taste.
 
 * Voice chat: not native - integrates with Zoom or Jitsi
 * Screen sharing: same as the above
@@ -218,12 +233,13 @@ It's not the worst approach for a business, but pretty bad for a community.
 * Pricing: free version with pretty much all the features you need
 * Other: open source
 
-### Google workspace
+### Google Workspace
 
-Google offers a good set of collaboration tools highly focused on business,
-including tightly integrated voice call and chat apps.
-Google Chat is based on group chats however and Google Workspace has no free option;
-these factors make it not worth looking into any further.
+Google Workspace offers a good set of collaboration tools,
+including tightly integrated voice call and chat apps,
+but it is fully dedicated to business and has no free option.
+Google Chat (a part of Workspace) can be used separately,
+but it offers only group chats.
 
 ### Microsoft Teams
 
@@ -233,16 +249,14 @@ The video chat is really solid, but asides from that do yourself a favor and don
 
 
 ---
-## Matrix clients
+## Matrix
 
 [Matrix](https://matrix.org/) is an open communication protocol,
 designed for decentralized (federated) communication.
 
 An account can be registered with any account provider ("homeserver")
 and it can interact with any other Matrix server.
-Think of it as how with email you can register anywhere but talk to others.
-However, migrating your data can be cumbersome if you want to switch to another server;
-this is natural though and it's good that it's even an option at all.
+Kind of like with email where you can register anywhere and still talk to others.
 
 Since they're based on the same underlying protocol,
 Matrix clients mostly differ with whether they implement the following features:
@@ -252,26 +266,41 @@ Matrix clients mostly differ with whether they implement the following features:
 
 Self-hosting a Matrix homeserver can be fairly involved,
 as the official implementation (called Synapse) uses Docker, which can be a double-edged sword.
-Despite having worked with Docker before, I couldn't get Synapse to work (neither the single image nor with docker-compose).
+Despite having worked with Docker before,
+I couldn't get Synapse to work (neither the single image version nor with docker-compose)
+and would have to spend a good hour or two trying to figure it out.
 It is way too technically involved for a regular person anyway,
 unlike e.g. TeamSpeak where it runs as a simple executable in a single folder.
+
+There's always the option of registering an account on a free matrix instance.
+Note that [matrix.org apparently censors users quite heavily, so it might be a better idea to register elsewhere](https://tatsumoto-ren.github.io/blog/list-of-matrix-servers.html).
+This gets you back into the good old "not owning your data" situation though.
+Worse yet, reading the above link goes to show that instance admins have the power
+to delete your chat rooms and accounts at will.
 
 ### Element
 
 ![(A screenshot of Element)](https://element.io/images/Ui-grad-homepage.png)
 
-[Element](https://element.io/) is the most mature Matrix client app.
+[Element](https://element.io/) (previously Riot) is the most mature Matrix client app.
 
-* Voice chat: yes
+* Voice chat: yes, and [it's native](https://element.io/blog/introducing-native-matrix-voip-with-element-call/)!
 * Screen sharing: yes
 * Multichannel support: yes, but a bit convoluted; previously you could only create "rooms",
-which would show up along with DMs in a messy way (think of it as Discord channels only showing up on your DM list and no servers). [The recently implemented Spaces feature](https://element.io/blog/spaces-the-next-frontier/) should alleviate this issue
+which would show up along with DMs in a messy way (think of it as Discord group chats).
+[The recently implemented Spaces feature](https://element.io/blog/spaces-the-next-frontier/) should alleviate this issue
 and it makes for a more server-like experience.
 * Custom emoji: No, and [this 8 year old Github issue](https://github.com/element-hq/element-meta/issues/339)
 is not boding well for the possibility of those being implemented.
-* Self-hosting: yes, but it requires registration
+There is a [Matrix feature proposal](https://github.com/matrix-org/matrix-spec-proposals/pull/1951) for them too,
+but it's 5 years old and not merged yet.
+* Self-hosting: yes
 * Pricing: free version with up to 200 users and a few limitations (specifics are hard to determine because of the jargon they use)
-* Other: federated and decentralised; you have good control over your data
+* Other:
+  * Federated and decentralised; you have good control over your data
+  * Seems to have some nice features that aren't listed directly on websites
+  * Has a decent mobile version
+  * Supports bots and offers several ones already
 
 
 ### Other
@@ -286,7 +315,7 @@ but tend to be different enough that they won't be a perfect fit.
 
 ### TeamSpeak
 
-![(A screenshot of Zulip)](https://discourse-forums-images.s3.dualstack.us-east-2.amazonaws.com/original/3X/b/d/bde87328b5d5cfe3a1ef611aeef0d375710a2b23.png)
+![(A screenshot of TeamSpeak)](https://discourse-forums-images.s3.dualstack.us-east-2.amazonaws.com/original/3X/b/d/bde87328b5d5cfe3a1ef611aeef0d375710a2b23.png)
 
 While great for voice chat and featuring some nice customization,
 [TeamSpeak](https://teamspeak.com/en/) has an unusual approach to text chats.
@@ -312,7 +341,9 @@ a singular global text chat for servers [was apparently removed in TeamSpeak 5](
 * Custom emoji: yes
 * Self-hosting: yes, fairly simple with no extra hoops (unlike Element)
 * Pricing: free version permits owning a single server with 32 users
-* Other: quite limited text chat functionality, but has a simple reply feature and a message pin feature
+* Other:
+  * Limited text chat functionality but has a simple reply feature and a message pin feature
+  * Has been around for ages, so while still a proprietary app, it is pretty trustworthy
 
 ### Steam chat
 
@@ -320,7 +351,7 @@ a singular global text chat for servers [was apparently removed in TeamSpeak 5](
 
 Bet you didn't expect this one, huh?
 Steam's group chat feature offers a server-like experience now.
-It's remarkably similar to Discord in the way it works, but much simpler.
+It's remarkably similar to Discord in the way it works, but muuuch simpler.
 
 * Voice chat: yes
 * Screen sharing: no
@@ -347,8 +378,8 @@ and as a text chat protocol, has no voice chat by definition.
 ---
 ## Discord clones
 
-These might seem like the best pick at first,
-but seem to have the same privacy and future-proofing issues as Discord.
+These might seem like the obvious pick at first,
+but can have the same privacy and future-proofing issues as Discord.
 
 ### Guilded
 
@@ -356,15 +387,57 @@ but seem to have the same privacy and future-proofing issues as Discord.
 
 Guilded offers some massively impressive features,
 posing it as a good candidate for being a "Discord killer".
-However, there's a tiny caveat; Guilded is owned by Roblox, a company known for shady practices on their gaming platform.
+However, there's a tiny caveat; Guilded is owned by Roblox,
+a company known for shady practices on their gaming platform
+(like earning money on underage game developers and taking a lion's share from their earnings).
+This puts it in the same place as many other apps (including Discord)
+where the company might decide to ruin the platform at some point.
 
-TODO elaborate on this and link stuff
+Moving onto the app itself though;
+Guilded works a bit differently than most of the apps listed here.
+What Discord calls servers are called groups in Guilded,
+and Guilded servers can have multiple groups.
+It's like another layer of organisation above Discord's servers.
+To avoid confusion, I will be using Guilded's terminology for the rest of this segment.
 
+I'm not sure I fully understand Guilded's business model,
+but there seems to be no premium features;
+instead, users can buy subscriptions for servers,
+which grants them roles and other per-server benefits (e.g. channel access)
+which are configurable by the server owner.
+Guilded earns money by taking a fee from those subs.
+You can also buy a subscription (Guilded Gold) to fund development
+and get access to beta features early.
+
+Also worth nothing is that similarly to Discord,
+[Guilded sells anonymised user data](https://support.guilded.gg/hc/en-us/articles/360039235054-Privacy).
 
 The features I mentioned above include:
-...
+* Pretty fun customization (e.g. using gradients in roles intead of plain colors)
+* Advanced channel types:
+  * Streaming (video calls with screen sharing)
+  * Voice channels; these are further organised into rooms,
+  for an overall feel similar to TeamSpeak
+  * Calendar channels for events
+  * Scheduling channels (users can mark their availability over time)
+  * Announcement channels
+  * Forums
+  * To-do lists
+  * Docs (wiki-like stuff)
+  * Media (this works kinda like social media, where people can comment and react on the media you post)
+* Configurable bots; while there's no public API for programmers at the moment,
+Guilded allows you to create bots from the GUI using a set of triggers and actions the bot can take in response.
 
-
+Overview:
+* Voice chat: yes
+* Screen sharing: yes
+* Multichannel support: yes
+* Custom emoji: yes, unlimited per server.
+I'm not sure these can be used across groups,
+but can probably be used across groups in a server.
+* Self-hosting: no
+* Pricing: free
+* Other: has a decent phone app
 
 ### Revolt chat
 
@@ -372,45 +445,145 @@ The features I mentioned above include:
 
 I've been putting this one off because it gets pretty crazy.
 
-On the surface, Revolt is a drop-in replacement for Discord, and it's open source!
+On the surface, [Revolt](https://revolt.chat/) is a drop-in replacement for Discord that's open source and abides by GPDR!
+Upon further inspection though, questionable things start popping up.
 
-Upon further inspection though, suspicious things start popping up.
+I saw some rather concerning comments about the developer team, drama,
+whether the app is really open source and about the self-hosting under [this article](https://itsfoss.com/revolt/).
+I take them with a grain of salt, as they seem to come from griefers,
+but they did set off a red flag in my head.
+
+[This doc](https://wiki.revolt.chat/en/transparency/inquiries/2023-09-10-rebolt)
+is linked in the comments, and is a somewhat tangible proof of drama going on around Revolt.
 
 There's no information about self-hosting on their website,
-and there's a registration form, while no clear monetization scheme is presented.
-This makes the future of the app questionable,
-as it can go in essentially any direction when it comes to data ownership.
+although after some searching it can be found as [a Docker deployment](https://github.com/revoltchat/self-hosted).
+Unlike the Synapse Matrix server, it has clear instructions on how to deploy it.
+At the same time I found comments on 
+[Reddit](https://www.reddit.com/r/revoltchat/comments/q0sjit/can_i_host_my_own_server_yet_or_is_there_just_one/
+)
+saying they couldn't get it to work.
 
-Revolt is not federated.
+Another big issue is that Revolt is not federated.
+Adding federation support [is not on the roadmap for the developers](https://developers.revolt.chat/faq/federation).
 Hosting your own Revolt instance requires users to register a separate account on it
 and they have no access to other instances with it.
+This creates an even bigger push for centralisation than with Element;
+while Revolt's privacy policy seems good at a glance,
+I'm not sure what to think of it in the light what I also found in the [FAQ](https://developers.revolt.chat/faq/federation):
 
-concerning comment here:
-https://itsfoss.com/revolt/
+> The Revolt team currently consists mostly of students (18-20 years old),
+and the majority of the project organisation and work is being done by one person (Insert).
 
-slew of technical issues on reddit
-https://www.reddit.com/r/revoltchat/
+That's really damn impressive,
+but at the same time leaves me worried for the longevity of the project.
 
+One annoyance that I found was the lack of a feature list on the Revolt website,
+or in the developer docs.
 
-> could not figure out how to successfully self host and run revolt.
->
-> Going back to Mattermost
->
-> sorry guys
-https://www.reddit.com/r/revoltchat/comments/q0sjit/can_i_host_my_own_server_yet_or_is_there_just_one/
+Lastly, glancing at the r/revoltchat subreddit
+reveals that the app has a lot of technical issues,
+hinting that it's still pretty early in development.
 
+There's some good news on the monetization side though:
+> We have a variety of monetisation ideas lined up internally, with these, it is not my intention for us to paywall features and I find it unlikely we would ever do that considering it would contradict what we're trying to achieve.
 
-* Voice chat: yes
-* Screen sharing: no
+* Voice chat: yes, but unfinished
+* Screen sharing: couldn't find any mentions of it, and definitely not even on the horizon considering the above
 * Multichannel support: yes
-* Custom emoji: sort-of; need to be bought with Steam Points (which are granted along any game purchase) and are limited to what's available in the store
-* Self-hosting: sort of; [explanation here]. [Users will have to register a new account on your instance](https://www.reddit.com/r/revoltchat/comments/18g69gr/i_have_a_few_questions_about_selfhosting_a_revolt/).
-* Pricing: free
-* Other: messages cannot be edited
+* Custom emoji: yes
+* Self-hosting: yes, but Revolt is not federated; [users will have to register a new account on your instance](https://www.reddit.com/r/revoltchat/comments/18g69gr/i_have_a_few_questions_about_selfhosting_a_revolt/)
+and won't be able to interact with other Revolt instances.
+* Pricing: fully free and intending to remain that way
+* Other: End-to-end encryption, message pinning not implemented yet; entire GUI is customizable
+
+I really hope this project succeeds
+and learning about it made me appreciate the insane amount of work that goes into making such an app;
+however, I'm not entirely sure how usable it is at the moment.
+
+### Spacebar chat
+
+Previously known as Fosscord,
+[Spacebar](https://spacebar.chat/) is a free and open source Discord clone that's compatible with existing Discord bots.
+
+It is still early in development and not really in a usable state,
+but is posing up to be an interesting option.
+In fact it's so eary in development that I could not find a screnshot of the app,
+although the website offers a login form.
+My first impression of it was better than of Revolt,
+as it's very transparent about what it is and isn't.
+
+* Voice chat: eventually
+* Screen sharing: not for the foreseeable future
+* Multichannel support: yes
+* Custom emoji: yes
+* Self-hosting: yes, although it is unclear whether it's federated or not
+* Pricing: fully free and intending to remain that way
 
 
+---
 ## Conclusions
 
-It's so over bros.
-Seriously though;
-things aren't looking the best, despite the multitude of chat apps on the market right now.
+I tried to concentrate on facts so far, so here's how I feel about
+the apps I find suitable to replace Discord in some capacity.
+
+**Revolt** - on the surface it's great and its GDPR compliance gives me hope.
+On the other, the lack of documentation for potential users
+gave me a major ick and the app is just not very mature yet.
+The lack of planning for instance interoperability / federation is concerning.
+I still haven't fully made up my mind about Revolt and will be watching its development.
+
+**Guilded** - on one hand, its features are so cool that I want to jump to it right now.
+On the other, I'd be doing so with resignation about future-proofing and privacy.
+Considering its accessibility and features, it is the most likely
+app to be adapted by regular users (i.e. non-techies) though.
+
+**TeamSpeak** - Maybe it's the easy self-hosting,
+the pretty nice "feel" or the long-standing reputation,
+but something about this app makes me pretty partial to it.
+The lack of proper text channels beyond group chats is a massive shame,
+and still no support for video calls doesn't help either.
+If not for those, I'd be picking TS as the successor to Discord.
+
+Honorable mentions:
+* Telegram - offers much better privacy than Guilded,
+but when it comes to future-proofing and ownership it is on par with Guilded,
+which in turn offers way better features.
+I'm also not sure how to feel about its somewhat shady background
+and not a fan of the design based on mobile app principles.
+* Steam chat - my current backup for contact with online friends,
+but due to its simplicity it will likely stay just a back-up.
+* Mattermost - would have won my heart if not for the paywalling of group voice calls.
+I'd be willing to even pay for it, but the pricing is ridiculous for a casual user.
+It is a good but sad reminder of why a FOSS option is the way to go.
+
+Now, to finish of this gargantuan post.
+
+As [this great post](https://www.reddit.com/r/discordapp/comments/t204t4/for_those_suggesting_guilded_revolt_signal_or/)
+on Reddit points out, the fundamental issue with apps like Revolt, Guilded and so on
+is that they are not based on an open protocol;
+the moment they do something unpopular, you're looking for an alternative once again.
+
+In light of that, the idealist in me says that **Element/Matrix** is the future.
+The issue is however, that its development has been concentrating on enterprise support,
+giving no love to the casual users (ekhm custom emojis nowhere in sight ekhm).
+My attempts at starting a server did not give me a good first impression,
+and joining an existing instance can be risky as I've mentioned before.
+I really want Element to be the winner, but considering all of the above, I will sadly not be jumping to Matrix anytime soon.
+
+This leaves me trying to pick between Revolt, Guilded, TeamSpeak and Telegram.
+
+I *sooo* want to pick TeamSpeak.
+But it lacks two features which are **way** too big to gloss over.
+I have to leave it for the unlikely scenario that
+I will need a separate voice call app because of our main communicator
+not offering a good enough service.
+
+Telegram is tempting because of its decent privacy,
+but I just can't get over the "normie texting app" feel it has.
+This leaves us with the unfair match between Guilded and Revolt.
+
+PS. As time goes by, apps mature and change (duh).
+I will probably come back to this topic in the future
+to review my top contenders again and see if
+any of them improved their offering.
