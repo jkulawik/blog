@@ -2,6 +2,7 @@
 * remove redirect plugin?
 * improve dark theme
 * improve/fix code highlihting
+* change favicon
 
 Done
 * update footers
