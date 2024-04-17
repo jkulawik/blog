@@ -19,13 +19,6 @@ This is a port of it's theme to Jekyll, with some tweaks. So you can use GitHub 
 - Gallery view for your images
 - Code highlighting
 
-## Screenshots
-
-![Home](https://raw.githubusercontent.com/Knhash/jekyllBear/master/assets/images/JBHome.png?raw=true "Home") 
-![Blog](https://raw.githubusercontent.com/Knhash/jekyllBear/master/assets/images/JBBlog.png?raw=true "Blog") 
-![LongForm](https://raw.githubusercontent.com/Knhash/jekyllBear/master/assets/images/JBLongForm.png?raw=true "LongForm") 
-![Poetry](https://raw.githubusercontent.com/Knhash/jekyllBear/master/assets/images/JBPoetry.png?raw=true "Poetry") 
-
 ## Development
 
 To set up your environment to develop this theme, run `bundle install`.
