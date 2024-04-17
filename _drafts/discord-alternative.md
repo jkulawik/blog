@@ -83,11 +83,13 @@ Self-hosted servers typically don't have this though.
 The feature of enabling interactions between self-hosted servers is called federation;
 it is pretty much the ideal (but rare) balance between data ownership and openness.
 
-* How good the mobile versions of the apps are, if there is one at all.
+* Mobile client apps. How good they are, and if there is one at all.
 This is however the last thing I consider, as most apps fail other fundamental criteria.
 
-There's also the issue of convincing other users to start using something new,
-but that's a whole other can of worms.
+* Convincing other users to switch to the app.
+I can make sacrifices in some regard, but convincing others to do so
+would be making this task harder than it already is.
+
 
 ---
 ## Texting apps
@@ -569,7 +571,8 @@ The issue is however, that its development has been concentrating on enterprise 
 giving no love to the casual users (ekhm custom emojis nowhere in sight ekhm).
 My attempts at starting a server did not give me a good first impression,
 and joining an existing instance can be risky as I've mentioned before.
-I really want Element to be the winner, but considering all of the above, I will sadly not be jumping to Matrix anytime soon.
+I really want Element to be the winner, but considering all of the above,
+I will sadly not be jumping to Matrix anytime soon.
 
 This leaves me trying to pick between Revolt, Guilded, TeamSpeak and Telegram.
 
@@ -578,10 +581,17 @@ But it lacks two features which are **way** too big to gloss over.
 I have to leave it for the unlikely scenario that
 I will need a separate voice call app because of our main communicator
 not offering a good enough service.
-
 Telegram is tempting because of its decent privacy,
-but I just can't get over the "normie texting app" feel it has.
+but I don't think I can get over the Fisher-Price feel it has
+(notably, Element is not much better in this regard).
+
 This leaves us with the unfair match between Guilded and Revolt.
+A fully dependent solution made by a large company who sells your data
+vs an open project with focus on privacy,
+but one in the early stages of development and made by a group of students.
+I don't want to choose at all.
+
+
 
 PS. As time goes by, apps mature and change (duh).
 I will probably come back to this topic in the future
