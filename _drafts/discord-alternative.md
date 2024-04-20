@@ -172,8 +172,11 @@ which means most of them will be too hard to install and operate for a regular u
 All of those reasons place the business-oriented apps as unlikely to be good Discord alternatives,
 but I included them to cover all bases.
 As such, I decided not to go too much in depth about them for the sake of brevity.
-One large area I didn't research was what these apps mean by video call integrations;
-my impression is that these mean links to external services, but I might be wrong.
+
+Lastly, a note about Jitsi Meet: it's a free and open-source video conference platform,
+which seems pretty decent from my experience with it and has most of the features from Discord
+(even the reaction soundboard). Many apps can integrate Jitsi as their voice call platform,
+and it can be self-hosted.
 
 ### Mattermost
 
@@ -183,8 +186,8 @@ An app targeted to developers;
 as far as my interests go, it is one of the more suitable alternatives for Discord.
 Mattermost would be a great alternative if not for its steep monetization of the premium version.
 
-* Voice chat: yes
-* Screen sharing: yes
+* Voice chat: several integrations to choose from
+* Screen sharing: depends on integration
 * Multichannel support: yes
 * Custom emoji: yes
 * Self-hosting: yes
@@ -211,14 +214,18 @@ The lack of self-hosting eliminates the main advantage of using a business-orien
 
 ### Rocket chat
 
-Fine for business, but not very enticing for communities.
+A decent app that's a pretty strong contender,
+but still has all the licensing trappings related to being business-oriented.
+I've used it a fair bit and there's some clunkiness in the interface;
+while feature-wise it's a good fit for me, something about this app doesn't entice me.
 
-* Voice chat: kinda? I'm not sure if it's built-in or integrated
-* Screen sharing: depends, video calls are through integration only
-* Multichannel support: yes
+* Voice chat: several integrations, including Jitsi
+* Screen sharing: same as the above
+* Multichannel support: yes, but the way they're laid out is a bit confusing
 * Custom emoji: yes
 * Self-hosting: yes
 * Pricing: free version with a 25 user cap
+* Other: open-source
 
 ### Zulip
 
@@ -227,13 +234,13 @@ an organization (server) has hashtagged "streams", where you discuss separate to
 Think of it as if you couldn't talk in a Discord channel directly and had to always start threads instead.
 I think this design atomizes discussions too much, but it might be a matter of taste.
 
-* Voice chat: not native - integrates with Zoom or Jitsi
+* Voice chat: integrates with Zoom or Jitsi
 * Screen sharing: same as the above
 * Multichannel support: threads-only, subscription based
 * Custom emoji: yes
 * Self-hosting: yes
 * Pricing: free version with pretty much all the features you need
-* Other: open source
+* Other: open-source
 
 ### Google Workspace
 
@@ -435,7 +442,7 @@ Overview:
 * Screen sharing: yes
 * Multichannel support: yes
 * Custom emoji: yes, unlimited per server.
-I'm not sure these can be used across groups,
+I'm not sure these can be used across servers,
 but can probably be used across groups in a server.
 * Self-hosting: no
 * Pricing: free
@@ -558,6 +565,10 @@ but due to its simplicity it will likely stay just a back-up.
 * Mattermost - would have won my heart if not for the paywalling of group voice calls.
 I'd be willing to even pay for it, but the pricing is ridiculous for a casual user.
 It is a good but sad reminder of why a FOSS option is the way to go.
+* Rocket chat - overall a good fit but for some reason I don't feel it.
+It deploys with Docker and I'm not sure how accessible the install process is.
+Besides, as with Mattermost it's subject to licensing restrictions that can change at a whim
+(which is weird for a supposedly FOSS project).
 
 Now, to finish of this gargantuan post.
 
@@ -577,10 +588,15 @@ I will sadly not be jumping to Matrix anytime soon.
 This leaves me trying to pick between Revolt, Guilded, TeamSpeak and Telegram.
 
 I *sooo* want to pick TeamSpeak.
-But it lacks two features which are **way** too big to gloss over.
+The option of hassle-free self-hosting
+that lets people use other servers is the best way of doing self-hosting
+for casual users in my opinion,
+and one that sadly is not offered by any other app.
+However, TeamSpeak lacks two features which are **way** too big to gloss over.
 I have to leave it for the unlikely scenario that
 I will need a separate voice call app because of our main communicator
 not offering a good enough service.
+
 Telegram is tempting because of its decent privacy,
 but I don't think I can get over the Fisher-Price feel it has
 (notably, Element is not much better in this regard).
@@ -589,11 +605,17 @@ This leaves us with the unfair match between Guilded and Revolt.
 A fully dependent solution made by a large company who sells your data
 vs an open project with focus on privacy,
 but one in the early stages of development and made by a group of students.
-I don't want to choose at all.
+Both are rather accessible too.
+Unfortunately the lack of video conferencing is a major holdback with Revolt.
+It puts the app into the same category as Element,
+where I'd prefer to use it but it's kinda not ready yet.
 
+That leaves us with Guilded;
+the obvious winner that fits like a glove feature-wise,
+but in terms of my goals is no different from Discord.
+If Discord disappeared today,
+Guilded would be the most likely to replace it when it comes to the wider userbase.
 
-
-PS. As time goes by, apps mature and change (duh).
-I will probably come back to this topic in the future
-to review my top contenders again and see if
-any of them improved their offering.
+As it stands though, Discord is here to stay,
+and I won't be trying to convince my friends to
+jump to Element, TeamSpeak or Revolt until one of these apps catches up with its feature offering.
