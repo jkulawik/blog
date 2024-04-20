@@ -8,6 +8,9 @@ tags: [software]
 Come with me on the fruitless journey of trying to find a good Discord replacement.
 Preferably free, open source and self-hostable.
 
+Note: this post came out really extensive;
+I covered pretty much every chat platform I have heard of, so bear with me :)
+
 ### The rationale
 
 The reasons for moving away from Discord are several.
@@ -17,14 +20,20 @@ The company already shows its mindset by not letting you bulk delete your messag
 and refusing to delete them along with your account;
 instead the account is anonymized and its message history remains.
 
-* Discord has existed for almost 10 years and will be ramping up its monetization sooner rather than later.
-Just recently it was announced that the app would start integrating ads, although this has been fairly limited so far.
+* Discord has existed for almost 10 years and will inevitably want to earn money
+(or more of it; but I suspect that the company is not making a profit and runs on venture capital).
+Probably sooner rather than later.
+There's something to be said by everyone on the Internet feeling entitled to free service,
+but even if it is silly to expect it,
+the truth is that paywalling more features will inevitably drive out a lot of users.
+What's more likely is that monetizing Discord will be done by showing ads and selling data (which to be fair they might already be doing),
+which drives fewer users away - me being one of them.
+It was recently announced that the app would start integrating ads, although this has been fairly limited so far.
 
 * There have been talks of Discord getting sold off to Microsoft in the past.
-Getting bought by any large corporation is not good news for the future of any app.
-As to why that is, maybe I will write another blog post about this someday.
-For now look no further than how the code editor Atom was sunset in favor of VS Code after Microsoft acquired Github,
-the creators of Atom.
+Software getting bought by a large corporation is pretty much never good news;
+Even if someone buys the app and decides not to kill it (like Microsoft loves to do),
+acquisitions tend to end with enshittification when the new owners realize the software does not turn any profits.
 
 * Paywalled features. At the moment the price of Nitro is alright,
 but it has fluctuated a lot in the past when Discord shifted around the available plans.
@@ -55,7 +64,7 @@ with larger communities, which are the use-cases I had in mind while evaluating 
 The more I researched for this article, the more I realised how stupidly good Discord is on
 many fronts; not only features, but how much it offers for free, how accessible it is,
 and its availability on many platforms.
-As such, finding an alternative comes with a set of tough challenges:
+As such, finding an alternative comes with a set of challenges:
 
 * Feature parity.
 Discord has a large set of features and usually *something* will be missing from the alternatives.
@@ -68,20 +77,25 @@ Some notable ones that I realized I took for granted:
 * Pricing.
 My ideal candidate would be free and open-source, like Linux, Blender or GIMP.
 While I won't deny I'm a bit of a cheap bastard,
-I just don't want to be left at the mercy of some executive chasing the bottom-line.
+I also just don't want to be left at the mercy of some executive chasing the bottom-line,
+and you will see why in the section about Mattermost.
 
 * Self-hosting and privacy vs accessibility.
 Self-hosting puts you in control of your data (and notably also the data of the people who use your server),
-but at the same time often comes with hurdles.
-Getting a server to run can be technically involved to the point of stopping you from using the app altogether.
-On top of that, server administration comes with its own set of woes,
-like update issues.
+but at the same time often comes with a high technical skill floor.
+In fact the only beginner-friendly self-hosted app I found was TeamSpeak
+and self-hosting anything else will be out of reach for casual users.
 
 * Self-hosting vs. interconnectivity.
-Many apps are partially (TeamSpeak) or fully centralized (Discord), which lets you interact with any "server".
-Self-hosted servers typically don't have this though.
-The feature of enabling interactions between self-hosted servers is called federation;
-it is pretty much the ideal (but rare) balance between data ownership and openness.
+Many apps are partially (TeamSpeak) or fully (Discord) centralized, which lets you interact with any server,
+since they can communicate over the central service.
+Many apps with self-hosting aren't like this though; their servers are completely detached from other ones.
+The feature of enabling interactions between decentralized servers is called federation;
+it is pretty much the ideal (but rare) balance between data ownership and interconnectivity.
+
+* Open-source with a free plan is not free and open-source.
+Business-oriented apps often label themselves as FOSS, but somehow also offer paid plans and can change the
+free plan as they wish, making them a glorified version of a proprietary app.
 
 * Mobile client apps. How good they are, and if there is one at all.
 This is however the last thing I consider, as most apps fail other fundamental criteria.
@@ -95,12 +109,12 @@ would be making this task harder than it already is.
 ## Texting apps
 
 Texting apps which are focused on direct messaging and group chats are a dime a dozen.
-
-These won't replace Discord, but are worth mentioning to establish what I'm going for,
-since many "Discord alternatives" articles tend to act like these are even remotely suitable.
+Many tech journalists out there act like these apps are good enough to replace Discord.
+Well, they are not.
 
 While not necessarily bad for what they are, texting apps aren't in Discord's ballpark.
-They tend to be mobile-first apps too, which usually makes for a clunky desktop experience.
+They tend to cater to a normie userbase,
+resulting in simplistic interfaces with a Fisher-price feel, basic features and limited customizability.
 Examples:
 * WhatsApp
 * Messenger
@@ -122,12 +136,10 @@ similar to Discord.
 
 ![(A screenshot of the Telegram desktop app)](https://dl.flathub.org/media/org/telegram/desktop/d89cd596919de725258e2feda770e650/screenshots/image-1_752x519@1.png)
 
-[Telegram](https://telegram.org/) offers [extensive customizability](https://telegram.org/blog/android-themes),
-but it seems to be a mobile app first,
-so in some ways it might be a bit simplistic.
-Other than that it seems like a good candidate.
-
-One great feature of Telegram is its privacy:
+[Telegram](https://telegram.org/) is an exception to some of the trends I laid out above.
+It offers [extensive customizability](https://telegram.org/blog/android-themes),
+recently started supporting multiple channels in group chats
+and offers good privacy:
 > All data is stored heavily encrypted and the encryption keys in each case are stored in several other data centers in different jurisdictions. This way local engineers or physical intruders cannot get access to user data.
 
 * Voice chat: yes
@@ -136,7 +148,7 @@ One great feature of Telegram is its privacy:
 Note that this issue might be resolved already.
 * Custom emoji: yes
 * Self-hosting: no
-* Pricing: free, with some premium features behind a paywall
+* Pricing: free, with a few minor premium features which incentivize donations
 * Other: supports message pinning
 
 PS. Telegram has some crazy stuff going on behind the scenes.
@@ -160,31 +172,37 @@ and it seems to have stayed in that category.
 ---
 ## Business-oriented apps
 
-Business-oriented apps tend to focus on integrating various development tools,
-log-in solutions
+They tend to focus on integrating various development tools, log-in solutions
 and other things related to corporate administration.
-They're typically designed to manage projects, which can be subtly detrimental to hosting a community.
 
 Since they're meant for companies, they come with a big price tag and require self-hosting.
 These apps are meant to be deployed by professional admins,
 which means most of them will be too hard to install and operate for a regular user.
 
-All of those reasons place the business-oriented apps as unlikely to be good Discord alternatives,
-but I included them to cover all bases.
-As such, I decided not to go too much in depth about them for the sake of brevity.
+A weird phenomenon I've noticed as I researched these apps
+was users complaining that the apps require premium plans for features
+which to me seem free when reading their websites.
+So take the feature lists with a grain of salt,
+as it might turn out that something basic requires premium.
 
-Lastly, a note about Jitsi Meet: it's a free and open-source video conference platform,
-which seems pretty decent from my experience with it and has most of the features from Discord
-(even the reaction soundboard). Many apps can integrate Jitsi as their voice call platform,
-and it can be self-hosted.
+All of this places the business-oriented apps (I will call them BOAs for short)
+as unlikely to be good Discord alternatives,
+but I include them to cover all bases.
+Quite interestingly, many user reviews tend to prefer Matrix (covered below) instead of these apps.
+
+A note about Jitsi Meet: it's a free and open-source video conference platform
+which seems pretty decent from my brief experience with it.
+It has most of the features of Discord video calls (even the reaction soundboard).
+Many apps integrate Jitsi as their voice call platform, and Jitsi servers can be self-hosted.
 
 ### Mattermost
 
 ![(A screenshot of Mattermost)](https://dl.flathub.org/media/com/mattermost/Desktop/0bf11798092500f8b581cb7431c8a187/screenshots/image-1_orig.png)
 
-An app targeted to developers;
-as far as my interests go, it is one of the more suitable alternatives for Discord.
-Mattermost would be a great alternative if not for its steep monetization of the premium version.
+An app targeted to developers with a clean interface and a good feature set.
+Mattermost would be a great alternative if not for its steep monetization of the premium version
+without which you can only have 1-on-1 voice calls.
+This change was introduced recently and is a good example of how company-owned software can pull the rug from under your feet.
 
 * Voice chat: several integrations to choose from
 * Screen sharing: depends on integration
@@ -193,17 +211,13 @@ Mattermost would be a great alternative if not for its steep monetization of the
 * Self-hosting: yes
 * Pricing: there's a free option which limits voice chat to 1-on-1 calls;
 the next license is $10 per month *per user*, sadly making Mattermost quite hostile to hosting even small communities.
-* Other: has a mobile app
-
-PS. Apparently the 1:1 call limit was introduced very recently.
-Massive bummer because it would have been the best fit for my use-case.
-This is a good example of how company-owned software can pull the rug from under your feet
-and is one of the reasons why I prefer FOSS solutions.
+* Other: has a mobile app, but I've heard that it has many issues.
 
 ### Slack
 
 Widely used business app, but similarly to Mattermost it has a per-user payment plan.
-The lack of self-hosting eliminates the main advantage of using a business-oriented app.
+The lack of self-hosting eliminates the main advantage of using a BOA;
+if your data is gonna be hosted by a company, might as well just choose Guilded.
 
 * Voice chat: yes
 * Screen sharing: yes
@@ -214,25 +228,37 @@ The lack of self-hosting eliminates the main advantage of using a business-orien
 
 ### Rocket chat
 
-A decent app that's a pretty strong contender,
-but still has all the licensing trappings related to being business-oriented.
-I've used it a fair bit and there's some clunkiness in the interface;
-while feature-wise it's a good fit for me, something about this app doesn't entice me.
+A pretty strong contender, but still has all the licensing trappings related to being business-oriented.
+I've used it a bit and there's something about the interface which doesn't really do it for me.
+[Apparently](https://www.reddit.com/r/selfhosted/comments/ynzakd/why_is_rocketchat_recommended/)
+there was a big push for monetization which made the app annoying (someone even called it "nagware").
 
-* Voice chat: several integrations, including Jitsi
+* Voice chat: free Jitsi integration, other might require paid plans
 * Screen sharing: same as the above
-* Multichannel support: yes, but the way they're laid out is a bit confusing
+* Multichannel support: yes
 * Custom emoji: yes
-* Self-hosting: yes
+* Self-hosting: yes, federated; in fact, Rocket seems to use Matrix under the hood now.
 * Pricing: free version with a 25 user cap
-* Other: open-source
+* Other: open-source, has a reportedly bad mobile app
 
 ### Zulip
 
-Zulip uses a subscription-based channel approach;
+![(A screenshot of Zulip)](https://dashboard.snapcraft.io/site_media/appmedia/2022/04/zulip-desktop-screenshot-dark.png)
+
+[Zulip](https://zulip.com/) uses a subscription-based channel approach;
 an organization (server) has hashtagged "streams", where you discuss separate topics.
-Think of it as if you couldn't talk in a Discord channel directly and had to always start threads instead.
-I think this design atomizes discussions too much, but it might be a matter of taste.
+Think of it as if you couldn't talk in a Discord channel directly and had to always start threads instead;
+I think this design atomizes discussions and ironically seems to cause misorganisation, according to some reviews.
+Notably though, streams can be used like Discord's categories instead, which should work pretty nicely.
+
+The app also has a weird approach to draft messages (they disappear when you click away and appear in a separate drafts box).
+Another issue is that I have posted in the wrong thread several times because I didn't highlight the thread I thought I was in.
+
+Looking at various user reviews, people tend to prefer Zulip over the other BOAs.
+I've also seen its developers engage with the community, which is a great sign.
+Despite the issues I noticed, Zulip seems pretty good;
+If I was to pick one of the BOAs it would probably be this.
+
 
 * Voice chat: integrates with Zoom or Jitsi
 * Screen sharing: same as the above
@@ -240,52 +266,42 @@ I think this design atomizes discussions too much, but it might be a matter of t
 * Custom emoji: yes
 * Self-hosting: yes
 * Pricing: free version with pretty much all the features you need
-* Other: open-source
+* Other: open-source, has a reportedly decent mobile app
 
 ### Google Workspace
 
-Google Workspace offers a good set of collaboration tools,
-including tightly integrated voice call and chat apps,
-but it is fully dedicated to business and has no free option.
-Google Chat (a part of Workspace) can be used separately,
-but it offers only group chats.
+Google Workspace offers a good set of collaboration tools which integrate well between each other.
+It is fully dedicated to business though and has no free option.
+Google Chat (a part of Workspace) can be used separately, but it only offers group chats.
 
 ### Microsoft Teams
 
-Crapware with annoying hick-ups every few moments,
+Crapware with annoying hiccups every few moments,
 which in classic Microsoft fashion has an unintuitive interface with features hidden in obscure places.
-The video chat is really solid, but asides from that do yourself a favor and don't bother with this thing.
+The video chat is solid, but asides from that do yourself a favor and don't bother with this thing.
 
 
 ---
 ## Matrix
 
 [Matrix](https://matrix.org/) is an open communication protocol,
-designed for decentralized (federated) communication.
+designed for decentralized and federated communication.
 
-An account can be registered with any account provider ("homeserver")
+An account can be registered on any server (which becomes your "homeserver")
 and it can interact with any other Matrix server.
 Kind of like with email where you can register anywhere and still talk to others.
 
-Since they're based on the same underlying protocol,
-Matrix clients mostly differ with whether they implement the following features:
+Since Matrix clients are based on the same underlying protocol,
+they only really differ by which bonus features they implement, such as:
 * End-to-end encryption
 * Spaces (equivalent to Discord's servers)
 * Voice/video calls and whether these can be done in groups or 1-on-1 only
 
-Self-hosting a Matrix homeserver can be fairly involved,
-as the official implementation (called Synapse) uses Docker, which can be a double-edged sword.
-Despite having worked with Docker before,
-I couldn't get Synapse to work (neither the single image version nor with docker-compose)
-and would have to spend a good hour or two trying to figure it out.
-It is way too technically involved for a regular person anyway,
-unlike e.g. TeamSpeak where it runs as a simple executable in a single folder.
-
-There's always the option of registering an account on a free matrix instance.
-Note that [matrix.org apparently censors users quite heavily, so it might be a better idea to register elsewhere](https://tatsumoto-ren.github.io/blog/list-of-matrix-servers.html).
-This gets you back into the good old "not owning your data" situation though.
-Worse yet, reading the above link goes to show that instance admins have the power
-to delete your chat rooms and accounts at will.
+Note that registering on a free matrix instance gets you back into the good old "not owning your data" situation.
+[Apparently some hosters can be heavy-handed with moderating](https://tatsumoto-ren.github.io/blog/list-of-matrix-servers.html) - admins can delete your chat rooms and accounts without prior notice.
+Considering that the website above links to a few servers with questionable content,
+I take what they call "absurdly strict moderation" with a grain of salt,
+but it regardless goes to show that you should pick free servers carefully.
 
 ### Element
 
@@ -304,7 +320,8 @@ is not boding well for the possibility of those being implemented.
 There is a [Matrix feature proposal](https://github.com/matrix-org/matrix-spec-proposals/pull/1951) for them too,
 but it's 5 years old and not merged yet.
 * Self-hosting: yes
-* Pricing: free version with up to 200 users and a few limitations (specifics are hard to determine because of the jargon they use)
+* Pricing: free version with up to 200 users and a few limitations
+(specifics are hard to determine because of the jargon they use)
 * Other:
   * Federated and decentralised; you have good control over your data
   * Seems to have some nice features that aren't listed directly on websites
@@ -335,24 +352,24 @@ It is intended for sharing links and files during calls,
 and designed with privacy in mind;
 people who aren't in the voice call can't read it, and chat history gets deleted after the call.
 
-Group text chats were recently added, but as with mobile apps, these are single-channeled.
-The app interface can be a bit confusing at times, even in version 5.
+Group text chats were recently added,
+but these are separate from servers and single-channeled.
 
 TeamSpeak is great if you don't text much,
 but it won't be a contender for Discord until it adds regular text channels to servers.
 Sadly, despite TeamSpeak memeing on Twitter about being an underdog to Discord,
-they seem to move backwards on this issue;
-a singular global text chat for servers [was apparently removed in TeamSpeak 5](https://community.teamspeak.com/t/global-server-chat/2458/12).
+I see no desire from their team to implement this feature.
 
 * Voice chat: yes (great one, reportedly)
 * Screen sharing: in the works for over a year, but no ETA or significant news about it.
 * Multichannel support: not really; tied to voice calls and temporary
 * Custom emoji: yes
-* Self-hosting: yes, fairly simple with no extra hoops (unlike Element)
+* Self-hosting: yes, and unlike everywhere else it is very simple
 * Pricing: free version permits owning a single server with 32 users
 * Other:
   * Limited text chat functionality but has a simple reply feature and a message pin feature
   * Has been around for ages, so while still a proprietary app, it is pretty trustworthy
+  * The app interface can be a bit confusing at times, even in version 5
 
 ### Steam chat
 
@@ -360,12 +377,12 @@ a singular global text chat for servers [was apparently removed in TeamSpeak 5](
 
 Bet you didn't expect this one, huh?
 Steam's group chat feature offers a server-like experience now.
-It's remarkably similar to Discord in the way it works, but muuuch simpler.
+It's remarkably similar to Discord in the way it works, but much simpler.
 
 * Voice chat: yes
 * Screen sharing: no
 * Multichannel support: yes
-* Custom emoji: sort-of; need to be bought with Steam Points (which are granted along any game purchase) and are limited to what's available in the store
+* Custom emoji: not really; they are limited to what's available in the Steam Points store
 * Self-hosting: no
 * Pricing: free
 * Other: messages cannot be edited
@@ -533,8 +550,8 @@ as it's very transparent about what it is and isn't.
 ---
 ## Conclusions
 
-I tried to concentrate on facts so far, so here's how I feel about
-the apps I find suitable to replace Discord in some capacity.
+I tried to concentrate on facts so far,
+so here's my top contenders and how I feel about them.
 
 **Revolt** - on the surface it's great and its GDPR compliance gives me hope.
 On the other, the lack of documentation for potential users
@@ -554,21 +571,19 @@ The lack of proper text channels beyond group chats is a massive shame,
 and still no support for video calls doesn't help either.
 If not for those, I'd be picking TS as the successor to Discord.
 
-Honorable mentions:
-* Telegram - offers much better privacy than Guilded,
-but when it comes to future-proofing and ownership it is on par with Guilded,
-which in turn offers way better features.
-I'm also not sure how to feel about its somewhat shady background
-and not a fan of the design based on mobile app principles.
-* Steam chat - my current backup for contact with online friends,
+**Zulip** - has remarkably few drawbacks;
+Given my good recent experience with Jitsi for conferencing,
+I am definitely willing to give it a shot.
+
+**Telegram** - offers much better privacy than Guilded,
+but is no better in terms of future-proofing and ownership,
+while having way less features.
+I'm also not a fan of the design based on mobile app principles
+and not sure how to feel about its somewhat shady background.
+
+**Steam chat** - my current backup for contact with online friends,
 but due to its simplicity it will likely stay just a back-up.
-* Mattermost - would have won my heart if not for the paywalling of group voice calls.
-I'd be willing to even pay for it, but the pricing is ridiculous for a casual user.
-It is a good but sad reminder of why a FOSS option is the way to go.
-* Rocket chat - overall a good fit but for some reason I don't feel it.
-It deploys with Docker and I'm not sure how accessible the install process is.
-Besides, as with Mattermost it's subject to licensing restrictions that can change at a whim
-(which is weird for a supposedly FOSS project).
+
 
 Now, to finish of this gargantuan post.
 
@@ -578,8 +593,8 @@ is that they are not based on an open protocol;
 the moment they do something unpopular, you're looking for an alternative once again.
 
 In light of that, the idealist in me says that **Element/Matrix** is the future.
-The issue is however, that its development has been concentrating on enterprise support,
-giving no love to the casual users (ekhm custom emojis nowhere in sight ekhm).
+However, its development has been concentrating on enterprise support,
+giving no love to the casual users (custom emojis nowhere in sight).
 My attempts at starting a server did not give me a good first impression,
 and joining an existing instance can be risky as I've mentioned before.
 I really want Element to be the winner, but considering all of the above,
