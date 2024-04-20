@@ -151,7 +151,7 @@ and offers good privacy:
 * Multichannel support: yes, called "topics", but these [might interfere with a few other features](https://caribbean.dev/telegram-group-topics-the-pros-and-the-cons/).
 Note that this issue might be resolved already.
 * Custom emoji: yes
-* Self-hosting: no
+* Self-hosting: no, but [not out of the question](https://telegram.org/faq#q-can-i-run-telegram-using-my-own-server)
 * Pricing: free, with a few minor premium features which incentivize donations
 * Other: supports message pinning
 
@@ -320,7 +320,7 @@ but it regardless goes to show that you should pick free servers carefully.
 * Screen sharing: yes
 * Multichannel support: yes, but a bit convoluted; previously you could only create "rooms",
 which would show up along with DMs in a messy way (think of it as Discord group chats).
-[The recently implemented Spaces feature](https://element.io/blog/spaces-the-next-frontier/) should alleviate this issue
+[The somewhat-new Spaces feature](https://element.io/blog/spaces-the-next-frontier/) should alleviate this issue
 and it makes for a more server-like experience.
 * Custom emoji: No, and [this 8 year old Github issue](https://github.com/element-hq/element-meta/issues/339)
 is not boding well for the possibility of those being implemented.
@@ -338,8 +338,18 @@ but it's 5 years old and not merged yet.
 
 ### Cinny
 
-A client with a more Discord-like interface which supports custom emojis using the yet-unimplemented [spec proposal](https://github.com/matrix-org/matrix-spec-proposals/pull/2545). Not sure if those will work with other instances.
+![(A screenshot of Cinny)](https://cinny.in/assets/preview-dark.png)
+
+[Cinny](https://cinny.in/) is a Matrix client with a more Discord-like interface which supports custom emojis using the yet-unimplemented [spec proposal](https://github.com/matrix-org/matrix-spec-proposals/pull/2545). Not sure if those will work with other instances.
 It also supports Spaces, but no voice/video calls ([for the foreseeable future](https://github.com/cinnyapp/cinny/issues/528)).
+
+* Voice chat: no, but maybe someday
+* Screen sharing: no
+* Multichannel support: yes
+* Custom emoji: yes
+* Self-hosting: yes
+* Pricing: free
+* Other: open-source
 
 ### Other
 
@@ -409,7 +419,8 @@ It is a free open-source alternative to TeamSpeak though, if you want one.
 
 IRC is a classic but only uses plain text (no emojis, reactions etc.)
 and as a text chat protocol, has no voice chat by definition.
-
+Chat history is not saved, so if you're not online when a conversation happens,
+you will not see it.
 
 ---
 ## Discord clones
@@ -557,10 +568,19 @@ as it's very transparent about what it is and isn't.
 ---
 ## Conclusions
 
-First, an honorable mention:
+First, honorable mentions:
+
 **Steam chat** is my current backup for contact with online friends,
 but due to its simplicity it will likely stay just a back-up.
-(Sidenote: it's pretty funny how Steam tries to make itself a social platform but the userbase keeps being immune to it)
+(Sidenote: it's pretty funny how Steam tries to make itself a social platform but its userbase keeps being immune to it)
+
+**Guilded** - feature-wise it fits like a glove and even surpasses Discord,
+but when it comes to my other goals it is not looking good;
+It's not future-proof and has mediocre privacy (reminder that Guilded sells your data).
+With its accessibility and features, it is the most likely
+app to be adapted by regular users (non-techies).
+If you are looking for an alternative and things like privacy and self-hosting
+are not of interest to you, Guilded kills the competition on all fronts.
 
 Carrying on;
 
@@ -570,13 +590,14 @@ is that they are not based on an open protocol;
 the moment they do something unpopular, you're looking for an alternative once again.
 
 In light of that, the idealist in me says that Matrix is the future.
-However, the development of both **Element** and Matrix seems to move slowly
-(as far as I can tell, Spaces was the last big feature added and it was in 2021; custom emojis nowhere in sight).
+However, the development of both **Element** and Matrix seems to move slowly;
+As far as I can tell, Spaces was the last big feature added and it was in 2021; custom emojis nowhere in sight.
 My attempts at deploying a server did not give me a good first impression about the self-hosting,
 and joining an existing instance can be risky as I've mentioned before.
 I can close an eye to the above, but the lack of custom emojis
 is pretty much a deal-breaker for me.
-I could use Cinny, but it has no voice calls, which would be a deal-breaker for many others.
+I could use Cinny, but it has no voice calls, which would be a deal-breaker for many others,
+and Cinny developers don't seem in a hurry to implement them either.
 
 Asides from Matrix, **TeamSpeak** is the only app that's both self-hostable and allows instances to interact.
 It is also the only app with a hassle-free server deployment.
@@ -585,30 +606,30 @@ The pretty nice "feel" and the app's longevity also make me pretty partial to th
 However, the lack of proper text channels beyond group chats is something I cannot gloss over.
 For now, I can only cross my thumbs that the TS devs will implement them someday.
 
-Now, to do away with a few notable centralized apps.
-
-**Revolt** - while it offers self-hosting,
-the data policies and monetization plans make using their main service very acceptable.
-At the same time, these things are not set in stone.
-Regardless, the app is not very mature yet and the lack of voice calls is a major drawback.
+**Revolt** - while it offers self-hosting (non-federated, sadly),
+the data policies and monetization plans make using their centralized service very acceptable.
+At the same time, these things are not set in stone, so Matrix still has an upper hand here.
+Regardless, the app is not very mature yet and the lack of voice calls is a major drawback
+(not sure why they haven't just integrated Jitsi).
 I will definitely be watching Revolt's development though, as it has big potential,
-and would be willing to use it in the future.
-
-**Guilded** - feature-wise it fits like a glove and even surpasses Discord,
-but when it comes to my other goals it is not looking good;
-It's not future-proof and has mediocre privacy (reminder that Guilded sells your data).
-Considering its accessibility and features though, it is the most likely
-app to be adapted by regular users (non-techies).
+and I would be willing to use it in the future.
 
 This leaves us with... **Zulip**?
 As things are, it has remarkably few drawbacks;
 Given my good experience with Jitsi for conferencing,
 I'd be willing to give it a shot, but the corporate feel is kinda meh.
-Definitely the least corporate BOA though.
+Definitely the least greedy BOA though.
 
-So... what's the verdict? I don't think there can even be one.
+So... what's the verdict? I don't think there can even be one,
+not while every good alternative has some glaring flaw.
 
+In the meanwhile, Zulip seems like a decent pick for the moment with its balance of features and free-ness,
+but it is not nearly enticing enough to leave Discord without them massively screwing something up.
 
-As it stands though, Discord is here to stay,
-and I won't be trying to convince my friends to
-jump to Element, TeamSpeak or Revolt until one of these apps catches up with its feature offering.
+If had to pick a hybrid approach,
+I'd probably go with Cinny for texting and do video calls on Jitsi at the moment.
+If Cinny implemented Jitsi integration, I'd be willing to commit to it;
+in fact I'd probably even prefer it to Revolt.
+
+As it stands though, Discord is here to stay, and I won't be trying to convince my friends to
+jump to Cinny, Element, TeamSpeak or Revolt until one of these apps catches up with its feature offering.
