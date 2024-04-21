@@ -691,7 +691,7 @@ So... what's the verdict? I don't think I can decisively make one,
 not while every good alternative has some glaring flaw.
 
 FluffyChat was a last minute find that saves this blog post from having no clear answer;
-it is basically the best future-proof and sovereign alternative to Discord I found.
+it is pretty much the best future-proof and sovereign alternative to Discord I found.
 Unfortunately I say that a bit begrudgingly, because its phone messenger feel puts me off.
 
 For those reasons I will be watching for any developments with Cinny, TeamSpeak and Revolt.
