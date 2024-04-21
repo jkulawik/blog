@@ -1,10 +1,8 @@
-* add RSS
-* remove redirect plugin?
-* improve dark theme
-* improve/fix code highlihting
 * change favicon
 
 Done
+* add RSS
+* improve/fix code highlighting
 * update footers
 * automate tags; so that adding new tags won't require config?
 * add tag list to post layout

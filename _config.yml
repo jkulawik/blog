@@ -3,7 +3,7 @@
 title: Sniper Monkey
 description: Yet another blog about tech and games (YABATAG)
 # baseurl: "/jekyllBear" # the subpath of your site, e.g. /blog/
-url: "https://knhash.in/jekyllBear" # the base hostname & protocol for your site
+url: "https://jkulawik.github.io/blog" # the base hostname & protocol for your site
 # host: 0.0.0.0
 
 #########################
@@ -40,7 +40,7 @@ compress_html:
 #     values:
 #       layout: tagged
 
-permalink: /blog/:slug
+permalink: /posts/:slug
 timezone: Poland
 future: false
 
@@ -49,17 +49,17 @@ exclude:
 - LICENSE.md
 - TODO.txt
 
-exclude: [vendor]
+exclude: [site]
 
 # Add general links to site pages here
 links:
   Home: /
-  Blog: /blog
+  Blog: /posts
   Tags: /tags
   Lasaga: /lasaga
+  RSS: /feed.xml
 
 
 # Add links for more focus here
 special_links:
-  "Don't ask to ask": https://dontasktoask.com/
-  "No Hello": https://nohello.net/en/
+  Twitter: https://twitter.com/JacobKLVK

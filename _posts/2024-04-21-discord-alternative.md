@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The futile quest for a Discord alternative"
-# subtitle: "Your friends won't make the switch anyway but oh well"
+subtitle: "Reviewing every texting app I know of in terms of future-proofing and features"
 tags: [software, discord-alternatives]
 ---
 

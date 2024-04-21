@@ -18,8 +18,6 @@ but I also have a fair bit of experience with developing games.
 I have made [a bunch of Amnesia mods](https://www.moddb.com/members/vuko-drakkeinen/mods)
 as a teenager, which hooked me on programming and now we're here.
 
-I've tried making 3D video games in Godot, but unfortunately I haven't finished
-either of them; it turns out that making games from scratch is a ton of work,
+I've tried making 3D video games in Godot, but I haven't finished either of them;
+it turns out that making games from scratch is a ton of work,
 over half of which consists of making art assets (something I'm an amateur in).
-
-This blog is based on the [jekyllBear]([repository](https://github.com/knhash/jekyllBear)) theme for Jekyll.
