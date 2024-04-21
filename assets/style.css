@@ -286,7 +286,13 @@ ul.discover-posts li small a {
     }
 
     code {
-        background-color: #777;
+        color: #ddd;
+        background-color: #01181f;
+    }
+
+    .highlight,
+    .code {
+        background-color: #01181f;
     }
 
     pre code {
