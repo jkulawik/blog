@@ -85,6 +85,10 @@ but at the same time often comes with a high technical skill floor.
 In fact the only beginner-friendly self-hosted app I found was TeamSpeak
 and self-hosting anything else will be out of reach for casual users.
 
+* **Appearance**, or "feel" if you will.
+Many apps look like phone messengers and have similarly simplistic features too;
+basic interfaces with very spaced elements are not something I'm looking for.
+
 * **Self-hosting vs. interconnectivity**.
 Many apps are partially (TeamSpeak) or fully (Discord) centralized,
 which lets you interact with any server, since they can communicate over the central service.
@@ -132,10 +136,6 @@ Feature-wise they tend to be very similar:
 * Self-hosting: no
 * Pricing: free but your data is likely being harvested
 
-It's also worth noting that many of these use the XMPP protocol,
-but as far as I can tell it doesn't have any interoperable clients
-similar to Discord.
-
 ### Telegram
 
 ![(A screenshot of the Telegram desktop app)](https://dl.flathub.org/media/org/telegram/desktop/d89cd596919de725258e2feda770e650/screenshots/image-1_752x519@1.png)
@@ -153,6 +153,7 @@ Note that this issue might be resolved already.
 * Custom emoji: yes
 * Self-hosting: no, but [not out of the question](https://telegram.org/faq#q-can-i-run-telegram-using-my-own-server)
 * Pricing: free, with a few minor premium features which incentivize donations
+* Phone messenger design: yes
 * Other: supports message pinning
 
 PS. Telegram has some crazy stuff going on behind the scenes.
@@ -171,6 +172,7 @@ and it seems to have stayed in that category.
 * Custom emoji: no
 * Self-hosting: no
 * Pricing: free but it's owned by Microsoft so your data is definitely being harvested
+* Phone messenger design: yes
 
 
 ---
@@ -216,6 +218,7 @@ This change was introduced recently and is a good example of how company-owned s
 * Self-hosting: yes
 * Pricing: there's a free option which limits voice chat to 1-on-1 calls;
 the next license is $10 per month *per user*, sadly making Mattermost quite hostile to hosting even small communities.
+* Phone messenger design: no
 * Other: has a mobile app, but I've heard that it has many issues.
 
 ### Slack
@@ -230,6 +233,7 @@ if your data is gonna be hosted by a company, might as well just choose Guilded.
 * Custom emoji: yes
 * Self-hosting: no
 * Pricing: free version which limits voice chat to 1-on-1 calls and restricts you to a single "server" (workspace)
+* Phone messenger design: no
 
 ### Rocket chat
 
@@ -244,6 +248,7 @@ there was a big push for monetization which made the app annoying (someone even 
 * Custom emoji: yes
 * Self-hosting: yes, federated; in fact, Rocket seems to use Matrix under the hood now.
 * Pricing: free version with a 25 user cap
+* Phone messenger design: no
 * Other: open-source, has a reportedly bad mobile app
 
 ### Zulip
@@ -271,6 +276,7 @@ If I was to pick one of the BOAs it would probably be this.
 * Custom emoji: yes
 * Self-hosting: yes
 * Pricing: free version with pretty much all the features you need
+* Phone messenger design: no
 * Other: open-source, has a reportedly decent mobile app
 
 ### Google Workspace
@@ -300,9 +306,11 @@ Since Matrix clients are based on the same underlying protocol,
 they only really differ by which bonus features they implement, such as:
 * End-to-end encryption
 * Spaces (equivalent to Discord's servers)
-* Voice/video calls and whether these can be done in groups or 1-on-1 only;
-worth noting is that I've seen [developers say](https://github.com/cinnyapp/cinny/issues/528#issuecomment-1872593452)
-that the current conferencing implementation is a messy prototype.
+* Voice/video calls and whether these can be done in groups or 1-on-1 only.
+Matrix has a somewhat experimental native call feature,
+but many apps simply integrate Jitsi.
+* Custom emoji are not in the Matrix spec yet,
+but some clients implement them
 
 Note that registering on a free matrix instance gets you back into the good old "not owning your data" situation.
 [Apparently some hosters can be heavy-handed with moderating](https://tatsumoto-ren.github.io/blog/list-of-matrix-servers.html) - admins can delete your chat rooms and accounts without prior notice.
@@ -316,7 +324,9 @@ but it regardless goes to show that you should pick free servers carefully.
 
 [Element](https://element.io/) (previously Riot) is the most mature Matrix client app.
 
-* Voice chat: yes, [native](https://element.io/blog/introducing-native-matrix-voip-with-element-call/)
+* Voice chat: yes, [native](https://element.io/blog/introducing-native-matrix-voip-with-element-call/),
+but I've seen [developers say](https://github.com/cinnyapp/cinny/issues/528#issuecomment-1872593452)
+that the current conferencing implementation is a messy prototype
 * Screen sharing: yes
 * Multichannel support: yes, but a bit convoluted; previously you could only create "rooms",
 which would show up along with DMs in a messy way (think of it as Discord group chats).
@@ -329,6 +339,7 @@ but it's 5 years old and not merged yet.
 * Self-hosting: yes
 * Pricing: free version with up to 200 users and a few limitations
 (specifics are hard to determine because of the jargon they use)
+* Phone messenger design: yes
 * Other:
   * Federated and decentralised; you have good control over your data
   * Seems to have some nice features that aren't listed directly on websites
@@ -349,12 +360,36 @@ It also supports Spaces, but no voice/video calls ([for the foreseeable future](
 * Custom emoji: yes
 * Self-hosting: yes
 * Pricing: free
-* Other: open-source
+* Phone messenger design: no
+* Other: open-source, from what I gather it seems to be web-base but I'm not sure how well it works on mobile, if at all
+
+### FluffyChat
+
+todo
+
+### SchildiChat
+
+todo
 
 ### Other
 
 A list of other Matrix clients can be seen [here](https://matrix.org/ecosystem/clients/).
 I will not be going over them, as they tend to have even less features.
+
+---
+## XMPP
+
+XMPP is an open and federated text message protocol, similar in concept to Matrix.
+It's used internally by Whatsapp, but more of often it's used for temporary messages
+(e.g. text chat in Jitsi calls) and push notifications.
+It has somewhat limited features and most clients are simple texting apps.
+Voice call support is limited; XMPP can only negotiate sessions,
+so actual calls depend on clients.
+XMPP has no concept for "servers":
+chat rooms are basically group chats and each one has to be administrated separately.
+It is [more lightweight and secure](https://lukesmith.xyz/articles/matrix-vs-xmpp/)
+than Matrix, so if you only need regular group chats, it is a great option.
+As far as I can tell, there is no XMPP client which tries to be Discord-like either.
 
 ---
 ## General and gaming-oriented apps
@@ -386,6 +421,7 @@ I unfortunately see no desire from their team to implement this feature.
 * Custom emoji: yes
 * Self-hosting: yes, and unlike everywhere else it is very simple
 * Pricing: free version permits owning a single server with 32 users
+* Phone messenger design: no
 * Other:
   * Limited text chat functionality but has a simple reply feature and a message pin feature
   * Has been around for ages, so while still a proprietary app, it is pretty trustworthy
@@ -405,6 +441,7 @@ It's remarkably similar to Discord in the way it works, but much simpler.
 * Custom emoji: not really; they are limited to what's available in the Steam Points store
 * Self-hosting: no
 * Pricing: free
+* Phone messenger design: no
 * Other: messages cannot be edited
 
 
@@ -499,6 +536,7 @@ I'm not sure these can be used across servers,
 but can probably be used across groups in a server.
 * Self-hosting: no
 * Pricing: free
+* Phone messenger design: no
 * Other: has a decent phone app
 
 ### Revolt chat
@@ -539,6 +577,7 @@ And in their privacy policy:
 * Custom emoji: yes
 * Self-hosting: yes
 * Pricing: fully free and intending to remain that way
+* Phone messenger design: no
 * Other: End-to-end encryption, message pinning not implemented yet; entire GUI is customizable
 
 I really hope this project succeeds and learning about it made me appreciate the insane amount of work that goes into making such an app;
@@ -562,6 +601,7 @@ as it's very transparent about what it is and isn't.
 * Custom emoji: yes
 * Self-hosting: yes
 * Pricing: fully free and intending to remain that way
+* Phone messenger design: no idea
 * Other: the app aims to be fully compatible with Discord APIs
 
 
