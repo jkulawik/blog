@@ -288,7 +288,7 @@ Google Chat (a part of Workspace) can be used separately, but it only offers gro
 
 ### Microsoft Teams
 
-Crapware with annoying hiccups every few moments,
+Soyware with annoying hiccups every few moments,
 which in classic Microsoft fashion has an unintuitive interface with features hidden in obscure places.
 The video chat is solid, but asides from that do yourself a favor and don't bother with this thing.
 
