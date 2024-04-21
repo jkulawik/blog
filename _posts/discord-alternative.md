@@ -2,7 +2,7 @@
 layout: post
 title:  "The futile quest for a Discord alternative"
 # subtitle: "Your friends won't make the switch anyway but oh well"
-tags: [software]
+tags: [software, discord-alternatives]
 ---
 
 Come with me on the fruitless journey of trying to find a good Discord replacement.
