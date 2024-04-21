@@ -8,8 +8,9 @@ tags: [software]
 Come with me on the fruitless journey of trying to find a good Discord replacement.
 Preferably free, open source and self-hostable.
 
-Note: this post came out really extensive;
-I covered pretty much every chat platform I have heard of, so bear with me :)
+Note: this post came out huge because I was being comprehensive,
+and there's a lot of topics and apps to cover.
+In fact I covered pretty much every chat platform I have heard of, so bear with me :)
 
 ### The rationale
 
