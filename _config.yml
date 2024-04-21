@@ -49,7 +49,7 @@ exclude:
 - LICENSE.md
 - TODO.txt
 
-exclude: [site]
+exclude: [docs]
 
 # Add general links to site pages here
 links:
