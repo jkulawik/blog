@@ -302,15 +302,20 @@ An account can be registered on any server (which becomes your "homeserver")
 and it can interact with any other Matrix server.
 Kind of like with email where you can register anywhere and still talk to others.
 
-Since Matrix clients are based on the same underlying protocol,
-they only really differ by which bonus features they implement, such as:
+Matrix clients differ mostly with these features:
 * End-to-end encryption
-* Spaces (equivalent to Discord's servers)
+* Spaces.
+Matrix was originally designed only with group chats ("rooms") in mind.
+The Spaces feature was retrofitted in 2021 to group rooms in something similar to Discord's servers.
+This feature is sometimes not implemented in clients as a result.
 * Voice/video calls and whether these can be done in groups or 1-on-1 only.
 Matrix has a somewhat experimental native call feature,
 but many apps simply integrate Jitsi.
-* Custom emoji are not in the Matrix spec yet,
-but some clients implement them
+* Custom emojis (also called stickers here) are
+[not really in the Matrix spec yet](https://matrix.org/blog/2024/03/22/matrix-v1.10-release/),
+but some clients implement them already.
+* Phone messenger design: unfortunately most clients have a messenger feel.
+Probably a result of the underlying protocol focusing on that style of messaging.
 
 Note that registering on a free matrix instance gets you back into the good old "not owning your data" situation.
 [Apparently some hosters can be heavy-handed with moderating](https://tatsumoto-ren.github.io/blog/list-of-matrix-servers.html) - admins can delete your chat rooms and accounts without prior notice.
@@ -318,24 +323,32 @@ Considering that the website above links to a few servers with questionable cont
 I take what they call "absurdly strict moderation" with a grain of salt,
 but it regardless goes to show that you should pick free servers carefully.
 
+You might also hear that Matrix leaks metadata and whatnot,
+but these claims [are probably exagerrated](https://www.reddit.com/r/PrivacyGuides/comments/q7qsty/is_matrix_still_a_metadata_disaster/).
+As far as I can see from [a document addressing those concerns](https://www.matrix.org/~matthew/Response_to_-_Notes_on_privacy_and_data_collection_of_Matrix.pdf),
+only the necessary data is shared between Matrix servers,
+and things like e-mails and phone numbers are only shared if you decide to add them to your profile.
+The document is from 2019, so these aspects of the protocol might have been improved further.
+
+Last thing of note is that Matrix has several server implementations.
+The main one, Synapse, uses a lot of system resources to run.
+I've also had issues with deploying it on Docker, it's less than straightforward.
+Another notable implementation is Dendrite, which should be more lightweight.
+I'm not sure if it's easier to deploy though.
+
 ### Element
 
 ![(A screenshot of Element)](https://element.io/images/Ui-grad-homepage.png)
 
 [Element](https://element.io/) (previously Riot) is the most mature Matrix client app.
+This doesn't necessarily mean it's the best one though; I've heard it's fairly bloated.
 
 * Voice chat: yes, [native](https://element.io/blog/introducing-native-matrix-voip-with-element-call/),
 but I've seen [developers say](https://github.com/cinnyapp/cinny/issues/528#issuecomment-1872593452)
 that the current conferencing implementation is a messy prototype
 * Screen sharing: yes
-* Multichannel support: yes, but a bit convoluted; previously you could only create "rooms",
-which would show up along with DMs in a messy way (think of it as Discord group chats).
-[The somewhat-new Spaces feature](https://element.io/blog/spaces-the-next-frontier/) should alleviate this issue
-and it makes for a more server-like experience.
-* Custom emoji: No, and [this 8 year old Github issue](https://github.com/element-hq/element-meta/issues/339)
-is not boding well for the possibility of those being implemented.
-There is a [Matrix feature proposal](https://github.com/matrix-org/matrix-spec-proposals/pull/1951) for them too,
-but it's 5 years old and not merged yet.
+* Multichannel support: kinda
+* Custom emoji: no
 * Self-hosting: yes
 * Pricing: free version with up to 200 users and a few limitations
 (specifics are hard to determine because of the jargon they use)
@@ -344,7 +357,7 @@ but it's 5 years old and not merged yet.
   * Federated and decentralised; you have good control over your data
   * Seems to have some nice features that aren't listed directly on websites
   * Has a decent mobile version
-  * Supports bots and offers several ones already
+  * Supports bots (called "integrations" in Matrix) and offers several ones already
 
 
 ### Cinny
@@ -354,27 +367,38 @@ but it's 5 years old and not merged yet.
 [Cinny](https://cinny.in/) is a Matrix client with a more Discord-like interface which supports custom emojis using the yet-unimplemented [spec proposal](https://github.com/matrix-org/matrix-spec-proposals/pull/2545). Not sure if those will work with other instances.
 It also supports Spaces, but no voice/video calls ([for the foreseeable future](https://github.com/cinnyapp/cinny/issues/528)).
 
+From what I gather this is a web client, so I'm not sure if/how well it works on mobile.
+I could not find any screenshots of the mobile layout.
+
 * Voice chat: no, but maybe someday
 * Screen sharing: no
-* Multichannel support: yes
+* Multichannel support: kinda
 * Custom emoji: yes
 * Self-hosting: yes
 * Pricing: free
 * Phone messenger design: no
-* Other: open-source, from what I gather it seems to be web-base but I'm not sure how well it works on mobile, if at all
+* Other: open-source
 
 ### FluffyChat
 
-todo
+![(A screenshot of FluffyChat)](https://freshbrewed.science/content/images/2024/01/cinny-07.png)
 
-### SchildiChat
+FluffyChat is a client which supports both custom emojis and video calls,
+and has clients for every major platform.
 
-todo
+* Voice chat: yes (I think it's Jitsi?)
+* Screen sharing: yes
+* Multichannel support: kinda
+* Custom emoji: yes
+* Self-hosting: yes
+* Pricing: free
+* Phone messenger design: yes
+* Other: open-source
 
 ### Other
 
 A list of other Matrix clients can be seen [here](https://matrix.org/ecosystem/clients/).
-I will not be going over them, as they tend to have even less features.
+I will not be going over all of them, as I did not find any other interesting ones.
 
 ---
 ## XMPP
@@ -630,14 +654,16 @@ is that they are not based on an open protocol;
 the moment they do something unpopular, you're looking for an alternative once again.
 
 In light of that, the idealist in me says that Matrix is the future.
-However, the development of both **Element** and Matrix seems to move slowly;
-As far as I can tell, Spaces was the last big feature added and it was in 2021; custom emojis nowhere in sight.
+However, the way it's designed (namely, group chats being first citizens)
+is kind of questionable to me.
 My attempts at deploying a server did not give me a good first impression about the self-hosting,
 and joining an existing instance can be risky as I've mentioned before.
-I can close an eye to the above, but the lack of custom emojis
-is pretty much a deal-breaker for me.
-I could use Cinny, but it has no voice calls, which would be a deal-breaker for many others,
-and Cinny developers don't seem in a hurry to implement them either.
+Although I guess I could try another server implementation.
+Another issue is the client selection and what features they offer.
+I was almost ready to write Matrix off because I could not find a client
+which supported both custom emoji and voice calls.
+Thankfully there's FluffyChat, although I'm not a fan of its phone messenger layout;
+I prefer how Cinny looks, but it has no voice calls and no mobile app.
 
 Asides from Matrix, **TeamSpeak** is the only app that's both self-hostable and allows instances to interact.
 It is also the only app with a hassle-free server deployment.
@@ -658,18 +684,16 @@ This leaves us with... **Zulip**?
 As things are, it has remarkably few drawbacks;
 Given my good experience with Jitsi for conferencing,
 I'd be willing to give it a shot, but the corporate feel is kinda meh.
-Definitely the least greedy BOA though.
+Definitely the least greedy BOA though... although you can never know how long this will last.
 
-So... what's the verdict? I don't think there can even be one,
+So... what's the verdict? I don't think I can decisively make one,
 not while every good alternative has some glaring flaw.
 
-In the meanwhile, Zulip seems like a decent pick for the moment with its balance of features and free-ness,
-but it is not nearly enticing enough to leave Discord without them massively screwing something up.
+FluffyChat was a last minute find that saves this blog post from having no clear answer;
+it is basically the best future-proof and sovereign alternative to Discord I found.
+Unfortunately I say that a bit begrudgingly, because its phone messenger feel puts me off.
 
-If had to pick a hybrid approach,
-I'd probably go with Cinny for texting and do video calls on Jitsi at the moment.
-If Cinny implemented Jitsi integration, I'd be willing to commit to it;
-in fact I'd probably even prefer it to Revolt.
+For those reasons I will be watching for any developments with Cinny, TeamSpeak and Revolt.
 
-As it stands though, Discord is here to stay, and I won't be trying to convince my friends to
-jump to Cinny, Element, TeamSpeak or Revolt until one of these apps catches up with its feature offering.
+In the meanwhile, I will probably try deploying a Matrix server again and getting some hands-on
+experience with FluffyChat; we'll see how that goes.
