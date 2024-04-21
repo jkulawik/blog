@@ -1,25 +1,25 @@
 ---
 layout: default
-title: Hello
+title: Home
 ---
 
 ![](/assets/images/sniper_monkey.jpg){:.centered}
 
 ## {{site.description}}
 
-[Bear Blog](https://bearblog.dev/) is *"a blogging platform where words matter most"*. 
+I'm some guy on the Internet.
 
-This is a port of it's theme to Jekyll, with some tweaks. So you can use GitHub Pages to host your blog while getting the same awesome Bear Blog feels.
+I write about programming and software in general, as well as online privacy and video games.
+I also enjoy movies and books, so a review might show up here every now and then.
 
-**Stop worrying about the style, focus on your writing.**
+My background is in ICT (information and communications technology) and cybersecurity.
+Currently working in backend development,
+but I also have a fair bit of experience with developing games.
+I have made [a bunch of Amnesia mods](https://www.moddb.com/members/vuko-drakkeinen/mods)
+as a teenager, which hooked me on programming and now we're here.
 
-- Looks great on *any* device
-- Tiny, optimized, and awesome pages
-- No trackers, ads, or scripts, *did I mention minimal already?*
-- Auto light and dark themes
-- Tag support, to filter blog pages
-- Quick, *15 minute* setup
-- Gallery view for your images
-- Code highlighting
+I've tried making 3D video games in Godot, but unfortunately I haven't finished
+either of them; it turns out that making games from scratch is a ton of work,
+over half of which consists of making art assets (something I'm an amateur in).
 
-Have a look around, this website is already themed with **jekyllBear**. If you like it, head over to the GitHub [repository](https://github.com/knhash/jekyllBear) for installation instructions.
+This blog is based on the [jekyllBear]([repository](https://github.com/knhash/jekyllBear)) theme for Jekyll.

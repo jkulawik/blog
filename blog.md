@@ -1,8 +1,7 @@
 ---
 layout: blog
 title: Blog
-description: Here be writings
-permalink: /blog
+permalink: /posts
 ---
 
-Here be writings. Mostly mundane, sometimes fanciful.
+Welcome To The Machine.
