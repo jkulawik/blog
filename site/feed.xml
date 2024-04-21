@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Sniper Monkey</title>
+        <description>Yet another blog about tech and games (YABATAG)</description>
+        <link>https://jkulawik.github.io/blog/</link>
+        <atom:link href="https://jkulawik.github.io/blog/feed.rbloggers.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Sun, 21 Apr 2024 15:51:02 +0200</pubDate>
+        <lastBuildDate>Sun, 21 Apr 2024 15:51:02 +0200</lastBuildDate>
+        <generator>Jekyll v4.3.3</generator>
+        
+            <item>
+                <title>The futile quest for a Discord alternative</title>
+                <author>jkulawik</author>
+                <description>Reviewing every texting app I know of in terms of future-proofing and features</description>
+                <pubDate>Sun, 21 Apr 2024 00:00:00 +0200</pubDate>
+                <link>https://jkulawik.github.io/blog/posts/discord-alternative</link>
+                <guid isPermaLink="true">https://jkulawik.github.io/blog/posts/discord-alternative</guid>
+                
+                <category>software</category>
+                
+                <category>discord-alternatives</category>
+                
+                
+            </item>
+        
+    </channel>
+</rss>
