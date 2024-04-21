@@ -1,6 +1,6 @@
-* change favicon
 
 Done
+* change favicon
 * add RSS
 * improve/fix code highlighting
 * update footers
