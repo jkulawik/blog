@@ -405,16 +405,67 @@ I will not be going over all of them, as I did not find any other interesting on
 ## XMPP
 
 XMPP is an open and federated text message protocol, similar in concept to Matrix.
-It's used internally by Whatsapp, but more of often it's used for temporary messages
-(e.g. text chat in Jitsi calls) and push notifications.
-It has somewhat limited features and most clients are simple texting apps.
-Voice call support is limited; XMPP can only negotiate sessions,
-so actual calls depend on clients.
-XMPP has no concept for "servers":
-chat rooms are basically group chats and each one has to be administrated separately.
-It is [more lightweight and secure](https://lukesmith.xyz/articles/matrix-vs-xmpp/)
+It's often used for temporary messages (e.g. text chat in Jitsi calls) and push notifications.
+Notably, WhatsApp is a proprietary system based on XMPP.
+
+While the core of the protocol is solid,
+extended functionalities (XEPs - XMPP extension protocols) are a mess.
+They are very atomized and most of them are stuck in the "experimental" stage.
+As a result, there's a lot of feature disparity between clients
+(e.g. setting a profile pic worked fine between Movim and Gajim for me, but Converse.js did not register it),
+and no clients support all major platforms
+(actually there's AstraChat, but it's a company-owned phone messenger)
+so a web client might be the best option.
+If I understand correctly, there is a XEP for group voice calls,
+but none for custom emojis.
+
+XMPP has no concept for "servers" (in the Discord sense): each chat room operates separately.
+So similarly to Matrix, "servers" would have to be awkwardly retrofitted into the protocol.
+
+XMPP is [more lightweight and secure](https://lukesmith.xyz/articles/matrix-vs-xmpp/)
 than Matrix, so if you only need regular group chats, it is a great option.
-As far as I can tell, there is no XMPP client which tries to be Discord-like either.
+As far as I can tell there is no XMPP client which comes close to Discord,
+nor do I have hope of there ever being one;
+XMPP is pretty nieche (I saw even less discussion about it than with Matrix)
+and the protocol makes it hard.
+
+Here's two of the clients I tested.
+I also briefly tested Converse.js and I don't get why it has the reputation of the most mature client,
+because it seems to have less features and interoperability than the other two I tried.
+I also wanted to try Monocle, but it's just an instance of Movim.
+
+### Movim
+
+Movim is a web client for XMPP which can be self-hosted.
+It's pretty decent overall and it's a shame it doesn't support custom emojis or group calls,
+because it would be very solid otherwise.
+
+* Voice chat: only 1-on-1. Group calls [are considered, but the developers need someone to sponsor it](https://github.com/movim/movim/issues/1110).
+* Screen sharing: yes
+* Multichannel support: no
+* Custom emoji: no. There are stickers, but these are configured per-instance of the Movim client app server,
+which is very restrictive. Stickers can't be used inline anyway.
+* Self-hosting: yes (both the web app itself and XMPP servers)
+* Pricing: free
+* Phone messenger design: no
+* Other: has support for public blog posts ala Telegram
+
+
+### Gajim
+
+Gajim is a Windows/Linux client for XMPP
+which ads chatroom "workspaces" in its UI which resemble how Discord works, but the rooms are still separate.
+It has a custom emoji plugin, but I couldn't get any plugins to work.
+
+* Voice chat: no? Maybe plugin
+* Screen sharing: no?
+* Multichannel support: simulated
+* Custom emoji: supposedly
+* Self-hosting: yes (XMPP server)
+* Pricing: free
+* Phone messenger design: no
+* Other: no mobile versions
+
 
 ---
 ## General and gaming-oriented apps
