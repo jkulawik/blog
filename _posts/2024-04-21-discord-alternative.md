@@ -8,9 +8,8 @@ tags: [software, discord-alternatives]
 Come with me on the fruitless journey of trying to find a good Discord replacement.
 Preferably free, open source and self-hostable.
 
-Note: this post came out huge because I was being comprehensive,
-and there's a lot of topics and apps to cover.
-In fact I covered pretty much every chat platform I have heard of, so bear with me :)
+Note: this post came out huge because I was being comprehensive, and there's a lot of topics and apps to cover.
+I covered pretty much every chat platform I have heard of, so bear with me :)
 
 ### The rationale
 
@@ -28,7 +27,7 @@ so any private information you put on there is still there and I find that creep
 There's something to be said by everyone on the Internet feeling entitled to free service,
 but even if it is silly to expect it,
 the truth is that increases in monetisation tend to be annoying,
-regardless if it's new paywalls or inegrated ads (notably, stream ads are being tentatively tested right now).
+regardless if it's new paywalls or integrated ads (notably, on-stream ads are being tentatively tested right now).
 
 * **There have been talks of Discord getting sold off to Microsoft in the past**.
 Software getting bought by a large corporation is pretty much never good news;
@@ -36,9 +35,9 @@ Even if someone buys the app and decides not to kill it (like Microsoft loves to
 acquisitions tend to end with enshittification when the new owners realize the software does not turn any profits.
 
 * **Paywalled features**. At the moment the price of Nitro is alright,
-but it has fluctuated a lot in the past when Discord shifted around the available plans.
-In a similar vein, Discord decided to lock certain features behind turning servers
-into open communities (e.g. announcement channels).
+but this wasn't always the case; it has fluctuated a lot in the past.
+In a similar vein, Discord decided to restrict certain features (e.g. announcement channels)
+to community servers (i.e. making the server public and acquiring a large userbase).
 
 In short, my search for a Discord alternative stems from future-proofing,
 data privacy paranoia and annoyance with emoji limitations.
@@ -58,8 +57,8 @@ but if shit hits the fan, I want to have an overview on what to replace it with.
 
 ### Challenges and criteria
 
-I mostly use Discord for interacting with small groups of friends and briefly interacting
-with larger communities, which are the use-cases I had in mind while evaluating the apps here.
+I mostly use Discord for interacting with casual communities,
+which is the use-case I had in mind while evaluating the apps here.
 
 The more I researched for this article, the more I realised how stupidly good Discord is on
 many fronts; not only features, but how much it offers for free, how accessible it is,
@@ -83,12 +82,12 @@ and you will see why in the section about Mattermost.
 * **Self-hosting and privacy vs accessibility**.
 Self-hosting puts you in control of your data (and notably also the data of the people who use your server),
 but at the same time often comes with a high technical skill floor.
-In fact the only beginner-friendly self-hosted app I found was TeamSpeak
-and self-hosting anything else will be out of reach for casual users.
+In fact the only beginner-friendly self-hosted app I found was TeamSpeak;
+everything else will be out of reach for casual users.
 
 * **Appearance**, or "feel" if you will.
 Many apps look like phone messengers and have similarly simplistic features too;
-basic interfaces with very spaced elements are not something I'm looking for.
+basic interfaces with very spaced-out elements are not something I'm looking for.
 
 * **Self-hosting vs. interconnectivity**.
 Many apps are partially (TeamSpeak) or fully (Discord) centralized,
@@ -96,14 +95,12 @@ which lets you interact with any server, since they can communicate over the cen
 Most apps with self-hosting aren't like this though; their servers are completely detached from other ones.
 In fact, you should assume that
 **all self-hosted deployments cannot interact with other ones, unless noted otherwise**.
-This means that users will have to register separate accounts on each instance,
-which is annoying and creates a drive for large servers with many users.
-In other words, I suspect that people either won't want to register and use multiple instances
-or will want to bring in all their friends to the one your hosting, which can be hard to sustain.
+This means that users will have to register separate accounts on each instance, which is annoying.
+So it creates competition between your instance and bigger ones,
+and at best your instance will attract a large number of users, which can be hard to sustain.
 The feature of enabling interactions between decentralized servers is called federation;
 it is pretty much the ideal (but rare) balance between data ownership and interconnectivity.
-In short, I lean towards apps that are either federated
-or are only semi-decentralized (like TeamSpeak).
+In short, I lean towards apps that are either federated or are semi-decentralized (like TeamSpeak).
 
 * **Open-source with a free plan is not free and open-source**.
 Business-oriented apps often label themselves as FOSS, but somehow also offer paid plans and can change the
@@ -414,7 +411,7 @@ They are very atomized and most of them are stuck in the "experimental" stage.
 As a result, there's a lot of feature disparity between clients
 (e.g. setting a profile pic worked fine between Movim and Gajim for me, but Converse.js did not register it),
 and no clients support all major platforms
-(actually there's AstraChat, but it's a company-owned phone messenger)
+(except AstraChat, but it's a company-owned phone messenger)
 so a web client might be the best option.
 If I understand correctly, there is a XEP for group voice calls,
 but none for custom emojis.
@@ -710,19 +707,24 @@ However, the way it's designed (namely, group chats being first citizens)
 is kind of questionable to me.
 My attempts at deploying a server did not give me a good first impression about the self-hosting,
 and joining an existing instance can be risky as I've mentioned before.
-Although I guess I could try another server implementation.
+I guess I could try another server implementation.
 Another issue is the client selection and what features they offer.
 I was almost ready to write Matrix off because I could not find a client
 which supported both custom emoji and voice calls.
 Thankfully there's FluffyChat, although I'm not a fan of its phone messenger layout;
 I prefer how Cinny looks, but it has no voice calls and no mobile app.
 
-Asides from Matrix, **TeamSpeak** is the only app that's both self-hostable and allows instances to interact.
+XMPP has similar upsides and downsides as Matrix,
+but it's obscure and messy.
+The client selection is not great either,
+with none of them supporting both calls and custom emojis.
+
+Asides from Matrix and XMPP, **TeamSpeak** is the only app that's both self-hostable and allows instances to interact.
 It is also the only app with a hassle-free server deployment.
 For those reasons, I *really* want to use it;
-The pretty nice "feel" and the app's longevity also make me pretty partial to this app.
+The pretty nice "feel" and the app's longevity make me pretty partial to it.
 However, the lack of proper text channels beyond group chats is something I cannot gloss over.
-For now, I can only cross my thumbs that the TS devs will implement them someday.
+For now, I can only cross my thumbs that the TS devs will implement those someday.
 
 **Revolt** - while it offers self-hosting (non-federated, sadly),
 the data policies and monetization plans make using their centralized service very acceptable.
@@ -734,9 +736,8 @@ and I would be willing to use it in the future.
 
 This leaves us with... **Zulip**?
 As things are, it has remarkably few drawbacks;
-Given my good experience with Jitsi for conferencing,
-I'd be willing to give it a shot, but the corporate feel is kinda meh.
-Definitely the least greedy BOA though... although you can never know how long this will last.
+I'd be willing to give it a shot, but the corporate feel (e.g. server = organization) is kinda meh.
+Definitely the least greedy BOA... although you can never know how long this will last.
 
 So... what's the verdict? I don't think I can decisively make one,
 not while every good alternative has some glaring flaw.
