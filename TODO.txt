@@ -1,3 +1,6 @@
+* move header and tag stuff to _data? See: https://jekyllrb.com/docs/datafiles/
+* table template: https://jekyllrb.com/tutorials/csv-to-table/
+* syntax highlighting css https://github.com/jwarby/jekyll-pygments-themes
 
 Done
 * change favicon
