@@ -1,3 +1,5 @@
+/* @import "code.css"; */
+
 body {
     font-family: Verdana, sans-serif;
     margin: auto;
@@ -119,6 +121,11 @@ table {
     width: 100%;
 }
 
+th,
+td {
+  padding: 5px;
+}
+
 hr {
     border-top: 1px dashed;
 }
@@ -139,7 +146,6 @@ code {
 .code {
     padding: 1px 15px;
     background-color: #f2f2f2;
-    color: #222;
     border-radius: 3px;
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -327,7 +333,6 @@ hr {
 }
 
 body:hover {
-    border-image: ;
     border-width: 0;
 }
 
