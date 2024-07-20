@@ -1,14 +1,20 @@
 ---
 layout: post
 title:  "Thief: The Black Parade"
-subtitle: "Or why my favorite two releases of the last few years are mods"
+subtitle: "Or: If I had a nickel for every time fans created a mod better than the original games, I'd have two nickels -- which isn't a lot, but it's weird that it happened twice"
 tags: [game-review]
 ---
 
-Review originally written for thiefguild.com.
+![](https://www.thiefguild.com/media/uploads/4/4e9a/4e9a7301-3261-4df6-aba7-9fa2917fa289/tbp_cover2jpg.jpg)
 
-The only thing which bests TBP in scale and faithfulness to the source material is a Gothic 2 campaign called Chronicles of Myrtana.
+Thief: The Black Parade (TBP for short) is a fan-made campaign for Thief: The Dark Project,
+a gaming masterpiece from 1998, and a game which was one of the progenitors of the stealth and immersive sim genres.
 
+TBP comes as a surprising second case of fans create a bona-fide sequel to an old cult-classic game,
+with the fan-made Gothic 2 campaign [Chronicles of Myrtana](https://kronikimyrtany.pl/en/) published in 2021 being the first one.
+I should write about it as well, because while TBP is an incredibly impressive effort, Chronicles of Myrtana is a whole other level.
+
+Review originally written for [thiefguild.com](https://www.thiefguild.com/topics/68327/pretty-much-a-fully-fledged-thief-game-but-made-by-fans).
 
 ## Review ##
 
@@ -68,6 +74,9 @@ While fairly straightforward, this mission is a nice warm-up for people who have
 My only real complaint is that it goes on a bit too long, but there's many fun secrets to find.
 
 ### Mission 2: Where Old Faces Fade ###
+
+![](https://media.moddb.com/images/mods/1/61/60244/dump442.png)
+
 This mansion heist is the first of many navigation challenges in TBP
 and has several great twists in the second half.
 My favorite one was reaching the secret passages in the second section
