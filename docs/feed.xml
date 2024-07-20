@@ -5,9 +5,22 @@
         <description>Yet another blog about tech and games (YABATAG)</description>
         <link>https://jkulawik.github.io/blog/</link>
         <atom:link href="https://jkulawik.github.io/blog/feed.rbloggers.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Tue, 07 May 2024 18:55:05 +0200</pubDate>
-        <lastBuildDate>Tue, 07 May 2024 18:55:05 +0200</lastBuildDate>
+        <pubDate>Sat, 20 Jul 2024 12:36:25 +0200</pubDate>
+        <lastBuildDate>Sat, 20 Jul 2024 12:36:25 +0200</lastBuildDate>
         <generator>Jekyll v4.3.3</generator>
+        
+            <item>
+                <title>Thief: The Black Parade</title>
+                <author>jkulawik</author>
+                <description>Or: If I had a nickel for every time fans created a mod better than the original games, I&apos;d have two nickels -- which isn&apos;t a lot, but it&apos;s weird that it happened twice</description>
+                <pubDate>Sun, 09 Jun 2024 00:00:00 +0200</pubDate>
+                <link>https://jkulawik.github.io/blog/posts/black-parade</link>
+                <guid isPermaLink="true">https://jkulawik.github.io/blog/posts/black-parade</guid>
+                
+                <category>game-review</category>
+                
+                
+            </item>
         
             <item>
                 <title>Microsoft shuts down Tango Gameworks</title>
