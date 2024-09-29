@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-![](assets/images/sniper_monkey.jpg){:.centered}
+![]({{ site.baseurl }}/assets/images/sniper_monkey.jpg){:.centered}
 
 ## {{site.description}}
 

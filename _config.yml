@@ -2,7 +2,8 @@
 
 title: Sniper Monkey
 description: Yet another blog about tech and games (YABATAG)
-url: "https://jkulawik.github.io/blog" # the base hostname & protocol for your site
+url: "https://jkulawik.github.io"
+baseurl: "/blog"
 # host: 0.0.0.0
 
 #########################
