@@ -4,4 +4,4 @@ title: Lasaga
 permalink: /lasaga
 ---
 
-![](/assets/images/garf.jpg){:.centered}
+![](assets/images/garf.jpg){:.centered}
