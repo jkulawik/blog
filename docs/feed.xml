@@ -5,9 +5,22 @@
         <description>Yet another blog about tech and games (YABATAG)</description>
         <link>https://jkulawik.github.io/blog/index.html</link>
         <atom:link href="https://jkulawik.github.io/blog/feed.rbloggers.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sun, 20 Oct 2024 19:34:54 +0200</pubDate>
-        <lastBuildDate>Sun, 20 Oct 2024 19:34:54 +0200</lastBuildDate>
+        <pubDate>Sat, 18 Jan 2025 22:00:13 +0100</pubDate>
+        <lastBuildDate>Sat, 18 Jan 2025 22:00:13 +0100</lastBuildDate>
         <generator>Jekyll v4.3.3</generator>
+        
+            <item>
+                <title>Some games should not be replayed</title>
+                <author>jkulawik</author>
+                <description>How Subnautica, one of my favorites, turned into a slog</description>
+                <pubDate>Sat, 18 Jan 2025 00:00:00 +0100</pubDate>
+                <link>https://jkulawik.github.io/blog/posts/subnautica</link>
+                <guid isPermaLink="true">https://jkulawik.github.io/blog/posts/subnautica</guid>
+                
+                <category>game-design</category>
+                
+                
+            </item>
         
             <item>
                 <title>Frostpunk 2</title>
