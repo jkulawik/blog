@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Grinding"
-subtitle: "Reviewing every texting app I know of in terms of future-proofing and features"
+subtitle: "bla bla"
 tags: [game-design, game-review]
 ---
 
