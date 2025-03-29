@@ -493,7 +493,7 @@ and I wanted to find out which.
 FG makes claims of topping the Steam bestsellers, and matching SOMA's "sales course".
 Google's search interest seems to confirm that.
 
-![]({{ site.baseurl }}/assets/images/misc/rebirth_search_interest.png){:.centered}
+![]({{ site.baseurl }}/assets/images/assorted/rebirth-search-interest.png){:.centered}
 
 [The Steam player counts][steam-charts]
 paint a more complicated picture though.
@@ -509,7 +509,7 @@ it is not an indicator of better sales or higher interest; only the raw number o
 
 Interestingly, Bunker had even more search interest than Rebirth, by an almost 45% margin at that, but had an over twice lower player count on release.
 
-![]({{ site.baseurl }}/assets/images/misc/rebirth_steam_players.png){:.centered}
+![]({{ site.baseurl }}/assets/images/assorted/rebirth-steam-players.png){:.centered}
 
 Regardless, [by FG's own admission][5m-later] the game didn't do too well financially and sales-wise:
 Rebirth sold 100k copies in 5 months whereas [SOMA sold 92k in 10 days][soma-blog],
