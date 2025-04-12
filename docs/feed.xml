@@ -5,9 +5,22 @@
         <description>Yet another blog about tech and games (YABATAG)</description>
         <link>https://jkulawik.github.io/blog/index.html</link>
         <atom:link href="https://jkulawik.github.io/blog/feed.rbloggers.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sat, 29 Mar 2025 17:41:32 +0100</pubDate>
-        <lastBuildDate>Sat, 29 Mar 2025 17:41:32 +0100</lastBuildDate>
+        <pubDate>Sat, 12 Apr 2025 13:59:26 +0200</pubDate>
+        <lastBuildDate>Sat, 12 Apr 2025 13:59:26 +0200</lastBuildDate>
         <generator>Jekyll v4.3.3</generator>
+        
+            <item>
+                <title>Pathologic 3 Demo</title>
+                <author>jkulawik</author>
+                <description>We are so back</description>
+                <pubDate>Sat, 12 Apr 2025 00:00:00 +0200</pubDate>
+                <link>https://jkulawik.github.io/blog/posts/pathologic3-demo</link>
+                <guid isPermaLink="true">https://jkulawik.github.io/blog/posts/pathologic3-demo</guid>
+                
+                <category>game-review</category>
+                
+                
+            </item>
         
             <item>
                 <title>Northern Journey</title>
