@@ -2,7 +2,7 @@
 layout: post
 title:  "The futile quest for a Discord alternative"
 subtitle: "Reviewing every texting app I know of in terms of future-proofing and features"
-tags: [software, discord-alternatives]
+tags: [software]
 ---
 
 Come with me on the fruitless journey of trying to find a good Discord replacement.
@@ -50,7 +50,7 @@ has a really cool comment that puts it well:
 >
 > Tomorrow Discord can have advertisement, selling outrageous amount of telemetry, ask everyone to pay, or anything else. If you think that's science-fiction, you're too young to remember when Movable Type was the hot thing on the interweb and almost everyone used it "because it's free".
 >
-> That's what Teamspeak and Mumble have. Control is in our hands. Even more so with Mumble, because it's open source. 
+> That's what Teamspeak and Mumble have. Control is in our hands. Even more so with Mumble, because it's open source.
 
 Lastly, I do not plan on moving away from Discord yet;
 but if shit hits the fan, I want to have an overview on what to replace it with.
