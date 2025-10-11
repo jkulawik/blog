@@ -10,7 +10,7 @@ I sneaked in some Heroes of Might and Magic V and a somewhat lauded indie title 
 I've also sat down to check out the Pathologic 3 demo "Quarantine" and was pleasantly surprised,
 but that's gonna be a separate blog post.
 
-![]({{ site.baseurl }}/assets/images/assorted/northern-journey-01.png){:.centered}
+![]({{ site.baseurl }}/assets/images/northern-journey/northern-journey-01.png){:.centered}
 
 This peculiar game lured me in with its moody woods,
 but its character surprised me, as its action goes even further beyond than what it shows in trailers.
@@ -37,7 +37,7 @@ The developer certainly had a thing for spiders,
 making a joke that you won't meet any air-breathing spiders from a certain point,
 only to later feature skeleton spiders and underwater spiders.
 
-![]({{ site.baseurl }}/assets/images/assorted/northern-journey-02.png){:.centered}
+![]({{ site.baseurl }}/assets/images/northern-journey/northern-journey-02.png){:.centered}
 
 ## Gameplay
 
@@ -62,7 +62,7 @@ meaning it's easy to run out of boss-killer weapons long before the fight is ove
 Other than that, there is some light platforming and navigation challenges,
 and you get to hunt for upgrade items hidden around in nooks and crannies.
 
-![]({{ site.baseurl }}/assets/images/assorted/northern-journey-05.png){:.centered}
+![]({{ site.baseurl }}/assets/images/northern-journey/northern-journey-05.png){:.centered}
 
 ## Plot
 
@@ -86,7 +86,7 @@ turning into classically linear designs.
 Although this is not entirely bad, because the game really overstays its welcome,
 which is my next point.
 
-![]({{ site.baseurl }}/assets/images/assorted/northern-journey-06.png){:.centered}
+![]({{ site.baseurl }}/assets/images/northern-journey/northern-journey-06.png){:.centered}
 
 Northern Journey has several MASSIVE hitches.
 My first one was the first diving sequence.
@@ -108,7 +108,7 @@ The glacier level has an area which spawns 20 ghosts that basically insta-kill y
 is to cheese it by slowly luring them out. It was very obscure and frustrating.
 Lastly, the bossfights in the last third of the game have a nasty tendency to feature insta-death pits.
 
-![]({{ site.baseurl }}/assets/images/assorted/northern-journey-03.png){:.centered}
+![]({{ site.baseurl }}/assets/images/northern-journey/northern-journey-03.png){:.centered}
 
 Overall the last part of the game drags on, with increasingly annoying enemies starting to appear.
 Although it's worth noting here that the game features an extraordinary number of distinct enemies;
@@ -138,7 +138,7 @@ The equipment menu also could have been more intuitive, like using drag and drop
 - I loved the Iceland-like levels, which remind me of Death Stranding a lot.
 - There's a kite sequence which is quite cool and lasts exactly long enough to be fun but not to get boring.
 
-![]({{ site.baseurl }}/assets/images/assorted/northern-journey-04.png){:.centered}
+![]({{ site.baseurl }}/assets/images/northern-journey/northern-journey-04.png){:.centered}
 
 I have to admit that I ended my run of this game with a sour face.
 The last boss fights all had a trick to them that I always noticed at the last moment,
