@@ -9,8 +9,9 @@ title: Home
 
 I'm some guy on the Internet.
 
-I write about programming and software in general, as well as online privacy and video games.
-I also enjoy movies and books, so a review might show up here every now and then.
+I mostly write about video games, with focus on their design.
+Other topics I want to write about are programming and software in general, as well as online privacy,
+but we'll get there when we get there.
 
 My background is in ICT (information and communications technology) and cybersecurity.
 Currently working in backend development,
