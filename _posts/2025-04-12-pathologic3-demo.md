@@ -12,7 +12,7 @@ And it restored my hopes in it, doing so well in fact that I'm very excited for 
 You see, when first announcing the new game (in a blog post I cannot find anymore),
 the future seemed bleak.
 Icepick Lodge said that Bachelor's route will not feature survival mechanics
-or even traversing the city, and would focus around time travelling to selected spots
+or even traversing the city, and would focus around time traveling to selected spots
 and using the plague finder to solve nonlinear puzzles.
 
 In the context of the original game being open world and about trying not to starve
@@ -93,12 +93,12 @@ than his Pathologic 1 and 2 counterparts, finally showing some empathy and emoti
 it seems that their evening discussions will be a key story point.
 - Eva herself is much more of a character now and has a new design (shown above).
 - We step out of the town for the first time and see the Capital.
-- The esotheric mumbo-jumbo about spirit and geometry
+- The esoteric mumbo-jumbo about spirit and geometry
 from the previous games seem to finally take some understandable shape;
 we learn more about it and the immortal man subplot than from
 the entirety of all the previous games.
 - The quick travel system uses special gates strewn across town
-and will likely tie in thematically to that esotheric part of the game,
+and will likely tie in thematically to that esoteric part of the game,
 as it was previously stated that the town's layout has special meaning.
 - We got a few hints of the meta nature of the game;
 one such quote is on the screenshot below.
@@ -115,6 +115,8 @@ In the case of Haruspex, they also did something that makes him look uncanny.
 
 On a semi-related note, the English voice actor for the Bachelor has been replaced.
 I do like the new one, but the previous one did a great job and I miss him.
+
+UPDATE: there are rumours that this is a temporary actor for the demo.
 
 Lastly, the performance is in the gutter once again.
 Pathologic 2 was infamously unoptimized, with the console port being basically unplayable.
