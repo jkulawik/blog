@@ -6,6 +6,7 @@ title: Home
 ![]({{ site.baseurl }}/assets/images/sniper_monkey.jpg){:.centered}
 
 ## {{site.description}}
+{:.title}
 
 I'm some guy on the Internet.
 
