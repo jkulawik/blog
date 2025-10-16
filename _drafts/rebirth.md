@@ -459,7 +459,6 @@ with certain care and attention paid to its predecessor that makes it hard to di
 
 And there it is, the most cursed game I have ever reviewed. Here's to hoping it stays this way.
 
----
 
 ## Addendum: the aftermath
 

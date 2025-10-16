@@ -114,7 +114,6 @@ I can make sacrifices in some regard, but convincing others to do so
 would be making this task harder than it already is.
 
 
----
 ## Texting apps
 
 Texting apps which are focused on direct messaging and group chats are a dime a dozen.
@@ -173,7 +172,6 @@ and it seems to have stayed in that category.
 * Phone messenger design: yes
 
 
----
 ## Business-oriented apps
 
 They tend to focus on integrating various development tools, log-in solutions
@@ -290,7 +288,6 @@ which in classic Microsoft fashion has an unintuitive interface with features hi
 The video chat is solid, but asides from that do yourself a favor and don't bother with this thing.
 
 
----
 ## Matrix
 
 [Matrix](https://matrix.org/) is an open communication protocol,
@@ -398,7 +395,6 @@ and has clients for every major platform.
 A list of other Matrix clients can be seen [here](https://matrix.org/ecosystem/clients/).
 I will not be going over all of them, as I did not find any other interesting ones.
 
----
 ## XMPP
 
 XMPP is an open and federated text message protocol, similar in concept to Matrix.
@@ -464,7 +460,6 @@ It has a custom emoji plugin, but I couldn't get any plugins to work.
 * Other: no mobile versions
 
 
----
 ## General and gaming-oriented apps
 
 These are more likely to replace Discord than business apps,
@@ -532,7 +527,6 @@ and as a text chat protocol, has no voice chat by definition.
 Chat history is not saved, so if you're not online when a conversation happens,
 you will not see it.
 
----
 ## Discord clones
 
 These might seem like the obvious pick at first,
@@ -678,7 +672,6 @@ as it's very transparent about what it is and isn't.
 * Other: the app aims to be fully compatible with Discord APIs
 
 
----
 ## Conclusions
 
 First, honorable mentions:
