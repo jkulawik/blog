@@ -3,7 +3,7 @@ layout: post
 title:  "You want to build a Recommender System in Prod"
 subtitle:  "(You haven’t done that before)"
 date:   2022-05-05 21:21:21 +0530
-tags: [general]
+tags: [examples]
 redirect_from:
   - general/recommender-system-in-prod
 ---
@@ -16,15 +16,15 @@ redirect_from:
 > bossman says to recommend stuff for noobs
 > because they can’t search properly or whatever
 > ok bossman
-> no defined problem statement? 
-> no csv? 
-> no accuracy and mae test suite? 
+> no defined problem statement?
+> no csv?
+> no accuracy and mae test suite?
 > no leaderboard?
 
 what do /b/?
 ```
 
-  
+
 
 _Haha, noob. Ok let’s do this._
 
@@ -32,7 +32,7 @@ _Haha, noob. Ok let’s do this._
 
 * * *
 
-  
+
 
 ### \> Frame problem statement
 
@@ -40,7 +40,7 @@ You are an adult now. Frame the problem statement yourself. Just ask a bunch of 
 
 Congratulations. Wasn’t so hard, was it.
 
-  
+
 
 ### \> Build framework
 
@@ -48,13 +48,13 @@ Setup your Jupyter Notebook so you can iterate fast. Build a first model, maybe 
 
 Build now so you don’t need to keep building later. 
 
-  
+
 
 ### \> Establish baseline
 
 You have the problem statement yeah? There is gotta be some stupid simple stuff that is better than random predictions. Yes, heuristics. Pick one, or some. Get test results. Now this is the one to beat. 
 
-  
+
 
 ### \> Metrics and reward function
 
@@ -64,13 +64,13 @@ This is going to be your leaderboard basically. And it should correlate _highly
 
 At least 2 hours. Minimum.
 
-  
+
 
 ### \> Simple algorithms first
 
 Or SAF for short. Heard of Multi Armed Bandits? Try that first. Shit’s amazing. Probably all that you’ll need.
 
-  
+
 
 * * *
 
@@ -80,7 +80,7 @@ _All this was within Jupyter. But predictions happen in the world outside, so we
 
 * * *
 
-  
+
 
 ### \> Prediction Service setup
 
@@ -90,7 +90,7 @@ Find something that works with python scripts. Why? Because it is easy to conver
 
 But code well. Classes and shit. You are in production environment now. Act like it.
 
-  
+
 
 ### \> Feature store (low latency cache)
 
@@ -100,7 +100,7 @@ Keep the actual prediction service is as light as possible. Maybe it just does 
 
 Good job!
 
-  
+
 
 ### \> Logs, health metrics and alerting
 
@@ -112,7 +112,7 @@ Keep your eyes on those numbers. Better, push those numbers (Prometheus) to a da
 
 Rest those eyes until needed.
 
-  
+
 
 ### \> Performance metrics
 
@@ -120,23 +120,23 @@ Fancy graphs that product people see to judge how good your recommender system i
 
 If you build this to be sufficiently standalone so all your future models can plug into it, well done, you are a good engineer.
 
-  
+
 
 ### \> Model re-training and pipelines
 
 Models get stale. Underlying data may no longer be relevant. You gotta re-train your models. Automate that shit. 
 
-Airflow will let you schedule tasks and dependencies in what it calls DAGs. Which are just Graphs which have a particular Direction and are Acyclic. Use them. It is fancy cron and you can do some fancy cron stuff with it. 
+Airflow will let you schedule tasks and dependencies in what it calls DAGs. Which are just Graphs which have a particular Direction and are Acyclic. Use them. It is fancy cron and you can do some fancy cron stuff with it.
 
-  
+
 
 * * *
 
-  
+
 
 _Congratulations. Your recommender system is now in production._ 
 
-_Soon “people” will come to you with suggestions and ideas on how to make recommendations better. They will say it is a small change, let us see how it performs._ 
+_Soon “people” will come to you with suggestions and ideas on how to make recommendations better. They will say it is a small change, let us see how it performs._
 
 _Now you are thinking about an experimentation framework. Hypothesis testing. Model Controller._
 

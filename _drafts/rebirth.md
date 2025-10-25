@@ -2,7 +2,7 @@
 layout: post
 title:  "The elusive disappointment of Amnesia: Rebirth"
 subtitle: "aaa"
-tags: [game-design, game-review]
+tags: [game-critique]
 ---
 
 I like torturing myself by trying to rationalize and essentialize why I didn't like certain games

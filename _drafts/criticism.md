@@ -2,7 +2,7 @@
 layout: post
 title:  "Game critique pitfalls"
 subtitle: "Addressing the difficulties, fallacies, implicit elements and failings of game critique"
-tags: [game-design, game-review]
+tags: [game-critique]
 ---
 
 I am bothered by my inclination towards negative points in my writing.

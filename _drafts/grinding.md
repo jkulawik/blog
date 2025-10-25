@@ -2,7 +2,7 @@
 layout: post
 title:  "Grinding"
 subtitle: "bla bla"
-tags: [game-design, game-review]
+tags: [game-critique]
 ---
 
 grindy survival games - valheim / zomboid and is it fun

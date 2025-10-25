@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Some games should not be replayed"
-subtitle: "How Subnautica, one of my favorites, turned into a slog"
-tags: [game-design, replay]
+title:  "Subnautica: why some games should not be replayed"
+subtitle: "How one of my favorite games turned into a slog"
+tags: [game-critique, replay]
 ---
 
 Subnautica made a huge impression on me; in 2023 I put it in my top 4 favorite games of all time.
