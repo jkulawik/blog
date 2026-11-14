@@ -1,0 +1,10 @@
+/* Dark mode background */
+html.dark, html.dark body, .dark body {
+  background-color: #01242e !important; /* Change to your desired dark color */
+}
+
+.dark div.hx\:sticky.hx\:bottom-0 {
+  background-color: #01242e !important;
+  box-shadow: none !important;
+  border-color: #334155 !important; /* Brighter slate border (Slate 700) */
+}

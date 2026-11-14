@@ -1,0 +1,19 @@
+{{/* Check if it's a regular page, belongs to your posts/blog section, and has a subtitle */}}
+{{ if and .IsPage (or (eq .Section "posts") (eq .Section "blog")) }}
+	{{ with .GetTerms "tags" }}
+      <div class="hx:text-sm hx:leading-7">
+        {{ range . }}
+          <a href="{{ .RelPermalink }}" class="hx:inline-block hx:whitespace-nowrap hx:mr-2 hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-100 hx:contrast-more:text-gray-800 hx:contrast-more:dark:text-gray-50">
+            #{{ .LinkTitle | lower }}
+          </a>
+        {{ end }}
+      </div>
+    {{ end }}
+	{{ with .Params.subtitle }}
+	<p>
+		<strong>
+			{{ . }}
+		</strong>
+	</p>
+  	{{ end }}
+{{ end }}

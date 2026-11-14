@@ -1,5 +1,5 @@
 ---
-layout: post
+type: blog
 title:  "Grinding"
 subtitle: "bla bla"
 tags: [game-critique]

@@ -1,13 +1,3 @@
-* move header and tag stuff to _data? See: https://jekyllrb.com/docs/datafiles/
-* table template: https://jekyllrb.com/tutorials/csv-to-table/
-* syntax highlighting css https://github.com/jwarby/jekyll-pygments-themes
+read and fix all published posts
 
-Done
-* change favicon
-* add RSS
-* improve/fix code highlighting
-* update footers
-* automate tags; so that adding new tags won't require config?
-* add tag list to post layout
-* Check out support for parsing markdown to create header link pages (_pages dir?)
-* update blog/tagged layouts to use group_by/group_by_exp instead of manual for loops
+check and fix post urls - remove dates from filenames?

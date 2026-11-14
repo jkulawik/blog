@@ -1,5 +1,5 @@
 ---
-layout: post
+type: blog
 title:  "Game critique pitfalls"
 subtitle: "Addressing the difficulties, fallacies, implicit elements and failings of game critique"
 tags: [game-critique]

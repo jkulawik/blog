@@ -1,5 +1,5 @@
 ---
-layout: post
+type: blog
 title:  "Resident Evil 6"
 subtitle: "A vastly overhated game which deserved more"
 tags: [game-review]

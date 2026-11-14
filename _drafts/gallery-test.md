@@ -1,5 +1,5 @@
 ---
-layout: post
+type: blog
 title:  "Mandatory first post"
 tags: []
 ---

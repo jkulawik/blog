@@ -1,5 +1,5 @@
 ---
-layout: post
+type: blog
 title:  "Godot plugins"
 subtitle: "a"
 tags: [game-dev, godot]

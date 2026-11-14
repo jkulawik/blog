@@ -1,5 +1,5 @@
 ---
-layout: post
+type: blog
 title:  "I don't get Project Zomboid"
 subtitle: "Survival is my favorite genre but Zomboid combines the worst of survival games and Minecraft"
 tags: [game-critique]

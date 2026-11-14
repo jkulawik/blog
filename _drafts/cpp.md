@@ -1,5 +1,5 @@
 ---
-layout: post
+type: blog
 title:  "C++ kinda sucks"
 # subtitle:  "A thinly-veiled love letter to Golang"
 tags: [programming]
