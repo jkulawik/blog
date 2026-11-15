@@ -1,7 +1,6 @@
 ---
 type: blog
 title:  "The elusive disappointment of Amnesia: Rebirth"
-subtitle: "aaa"
 tags: [game-critique]
 draft: true
 ---
@@ -9,7 +8,7 @@ draft: true
 I like torturing myself by trying to rationalize and essentialize why I didn't like certain games
 as much as I expected, so having done [Bunker][bunker-link], here's the big one.
 
-[bunker-link]: {{ site.baseurl }}/posts/bunker
+[bunker-link]: /posts/amnesia-bunker
 
 Rebirth is not a bad game.
 It is also not a great one, albeit it clearly has a charm to it,

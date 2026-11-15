@@ -1,3 +1,5 @@
 read and fix all published posts
 
 check and fix post urls - remove dates from filenames?
+
+establish dates for rebirth and re6 posts
